@@ -1,0 +1,8 @@
+<resources>
+    <string name="app_name">FitnessApp</string>
+    <string name="txtDailyGoal">Daily Goal</string>
+    <string name="txtfasting">Fasting</string>
+    <string name="txtFasting">Fasting</string>
+    <string name="txtWater">Water Consumption</string>
+    <string name="txtDailyGoals">Daily Goals</string>
+</resources>
