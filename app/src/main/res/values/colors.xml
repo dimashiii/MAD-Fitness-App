@@ -1,10 +1,35 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
-    <color name="colorPrimary">#27D8A1</color>
-    <color name="colorPrimaryDark">#348D71</color>
-    <color name="colorAccent">#03DAC5</color>
+    <color name="purple_200">#FFBB86FC</color>
+    <color name="purple_500">#FF6200EE</color>
+    <color name="purple_700">#FF3700B3</color>
+    <color name="teal_200">#FF03DAC5</color>
+    <color name="teal_700">#FF018786</color>
+    <color name="black">#FF000000</color>
+    <color name="white">#FFFFFFFF</color>
 
-    <color name="colorWhite">#ffff</color>
-    <color name="colorBlack">#00000</color>
-    <color name="colorPurple">#4a148c</color>
+
+    <color name="green1">#348D71</color>
+    <color name="green2">#36967A</color>
+    <color name="green3">#3EA182</color>
+    <color name="green4main">#27D8A1</color>
+
+    <color name="blue1">#6CA4F7</color>
+    <color name="blue2">#E2EEFF</color>
+    <color name="blue3">#A7CCFF</color>
+    <color name="blue4main">#7EB7FE</color>
+    <color name="blue5">#5CA3FF</color>
+
+    <color name="yellow1">#D37A33</color>
+    <color name="yellow2">#FFF3C9</color>
+    <color name="yellow3">#FFE49B</color>
+    <color name="yellow4">#FFC76F</color>
+    <color name="yellow5">#FFB037</color>
+
+    <color name="greyblue0">#E9F0F6</color>
+    <color name="grey1">#929BA1</color>
+    <color name="grey2">#888888</color>
+    <color name="grey3">#2F3448</color>
+    <color name="grey4dark">#171A23</color>
+
 </resources>
