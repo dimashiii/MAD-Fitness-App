@@ -7,7 +7,7 @@
     android:background="#000000"
     android:orientation="vertical"
     android:padding="24dp"
-    tools:context=".MainActivity">
+    tools:context=".DailygoalsActivity">
 
     <LinearLayout
         android:layout_width="wrap_content"
@@ -87,31 +87,31 @@
                         <ImageView
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
-                            android:src="" />
+                             />
 
                         <ImageView
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
                             android:layout_marginLeft="2dp"
-                            android:src="" />
+                             />
 
                         <ImageView
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
                             android:layout_marginLeft="2dp"
-                            android:src="" />
+                             />
 
                         <ImageView
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
                             android:layout_marginLeft="2dp"
-                            android:src="" />
+                             />
 
                         <ImageView
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
                             android:layout_marginLeft="2dp"
-                            android:src="" />
+                             />
 
                     </LinearLayout>
 
@@ -132,7 +132,7 @@
                             android:layout_width="wrap_content"
                             android:layout_height="match_parent"
                             android:layout_marginLeft="16dp"
-                            android:src="" />
+                             />
 
                         <LinearLayout
                             android:layout_width="wrap_content"
@@ -240,31 +240,31 @@
                         <ImageView
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
-                            android:src="" />
+                             />
 
                         <ImageView
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
                             android:layout_marginLeft="2dp"
-                            android:src="" />
+                             />
 
                         <ImageView
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
                             android:layout_marginLeft="2dp"
-                            android:src="" />
+                             />
 
                         <ImageView
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
                             android:layout_marginLeft="2dp"
-                            android:src="" />
+                             />
 
                         <ImageView
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
                             android:layout_marginLeft="2dp"
-                            android:src="" />
+                             />
 
                     </LinearLayout>
 
@@ -285,7 +285,7 @@
                             android:layout_width="wrap_content"
                             android:layout_height="match_parent"
                             android:layout_marginLeft="16dp"
-                            android:src="" />
+                             />
 
                         <LinearLayout
                             android:layout_width="wrap_content"
