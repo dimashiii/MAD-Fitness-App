@@ -34,4 +34,5 @@
     <string name="txtbegdash">Beginner Plan Dashboard</string>
     <string name="txtrepeattype">Repeat Type</string>
     <string name="txtfastingtype">Weekdays</string>
+    <string name="txtwateruse">Daily Water Consumption</string>
 </resources>
