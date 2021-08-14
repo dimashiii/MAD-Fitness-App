@@ -9,7 +9,6 @@
     tools:context=".FastingstopwatchActivity">
 
     <ImageView
-        android:id="@+id/stopwatch"
         android:layout_width="276dp"
         android:layout_height="247dp"
         android:layout_marginStart="8dp"
@@ -36,7 +35,6 @@
 
 
     <Button
-        android:id="@+id/btnget"
         android:layout_width="280dp"
         android:layout_height="55dp"
         android:layout_marginStart="8dp"
@@ -57,7 +55,6 @@
         app:rippleColor="#7C7070" />
 
     <Button
-        android:id="@+id/btnstop"
         android:layout_width="280dp"
         android:layout_height="55dp"
         android:layout_marginStart="8dp"
@@ -78,7 +75,6 @@
         app:rippleColor="#7C7070" />
 
     <TextView
-        android:id="@+id/textView"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="@string/txttime"
@@ -92,7 +88,6 @@
         app:layout_constraintVertical_bias="0.653" />
 
     <TextView
-        android:id="@+id/txtfastingtimer"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="@string/txtfastingtimer"
