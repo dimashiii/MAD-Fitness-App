@@ -4,7 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@drawable/fitness_bg"
+    android:background="@color/grey3"
     android:orientation="vertical"
     android:padding="24dp"
     tools:context=".WaterconsuptionplansActivity">
@@ -18,7 +18,7 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:fontFamily="@font/asap_bold"
-            android:text="Water Consumption"
+            android:text="@string/txtwaterconsumption"
             android:textColor="#27D8A1"
 
             android:textSize="24dp" />
@@ -28,7 +28,7 @@
             android:layout_height="wrap_content"
             android:layout_marginLeft="4dp"
             android:fontFamily="@font/asap_bold"
-            android:text="Plans"
+            android:text="@string/txtwaterplans"
             android:textColor="#fff"
             android:textSize="24dp"
 
@@ -73,7 +73,7 @@
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:fontFamily="@font/asap_bold"
-                        android:text="Beginner"
+                        android:text="@string/txtwaterbeginner"
                         android:textColor="#348D71"
                         android:textSize="24dp" />
 
@@ -195,7 +195,7 @@
                         android:layout_height="wrap_content"
                         android:layout_marginLeft="5dp"
                         android:fontFamily="@font/asap_bold"
-                        android:text="Edit"
+                        android:text="@string/txtwaterbeginneredit"
                         android:textColor="#F06A90B5" />
 
 
@@ -219,7 +219,7 @@
                         android:layout_height="wrap_content"
                         android:layout_marginLeft="5dp"
                         android:fontFamily="@font/asap_bold"
-                        android:text="Delete"
+                        android:text="@string/txtwaterbeginnerdelete"
                         android:textColor="#F06A90B5" />
 
 
@@ -258,7 +258,7 @@
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:fontFamily="@font/asap_bold"
-                        android:text="Intermediate"
+                        android:text="@string/txtwaterinter"
                         android:textColor="#348D71"
                         android:textSize="24dp" />
 
@@ -380,7 +380,7 @@
                         android:layout_height="wrap_content"
                         android:layout_marginLeft="5dp"
                         android:fontFamily="@font/asap_bold"
-                        android:text="Edit"
+                        android:text="@string/txtwaterinteredit"
                         android:textColor="#F06A90B5" />
 
 
@@ -404,7 +404,7 @@
                         android:layout_height="wrap_content"
                         android:layout_marginLeft="5dp"
                         android:fontFamily="@font/asap_bold"
-                        android:text="Delete"
+                        android:text="@string/txtinterwaterdelete"
                         android:textColor="#F06A90B5" />
 
 
@@ -443,7 +443,7 @@
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:fontFamily="@font/asap_bold"
-                        android:text="Expert"
+                        android:text="@string/txtwaterexpert"
                         android:textColor="#348D71"
                         android:textSize="24dp" />
 
@@ -565,7 +565,7 @@
                         android:layout_height="wrap_content"
                         android:layout_marginLeft="5dp"
                         android:fontFamily="@font/asap_bold"
-                        android:text="Edit"
+                        android:text="@string/txtwaterexpertedit"
                         android:textColor="#F06A90B5" />
 
 
@@ -589,7 +589,7 @@
                         android:layout_height="wrap_content"
                         android:layout_marginLeft="5dp"
                         android:fontFamily="@font/asap_bold"
-                        android:text="Delete"
+                        android:text="@string/txtwaterexpertdelete"
                         android:textColor="#F06A90B5" />
 
 
