@@ -1,12 +1,14 @@
 package com.example.fitnessapp;
 
-import android.app.Activity;
+import androidx.appcompat.app.AppCompatActivity;
+
 import android.os.Bundle;
 
-public class activity_dailygoal extends Activity {
+public class AppoverviewActivity extends AppCompatActivity {
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_dailygoal);
+        setContentView(R.layout.activity_appoverview);
     }
 }
