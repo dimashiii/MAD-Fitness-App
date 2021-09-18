@@ -1,5 +1,49 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
+  <component name="DesignSurface">
+    <option name="filePathToZoomLevelMap">
+      <map>
+        <entry key="..\:/MAD/FitnessApp/app/src/main/res/layout/activity_aboutyou.xml" value="0.264" />
+        <entry key="..\:/MAD/FitnessApp/app/src/main/res/layout/activity_appoverview.xml" value="0.21981981981981982" />
+        <entry key="..\:/MAD/FitnessApp/app/src/main/res/layout/activity_dailygoals.xml" value="0.2" />
+        <entry key="..\:/MAD/FitnessApp/app/src/main/res/layout/activity_fastingform.xml" value="0.25416666666666665" />
+        <entry key="..\:/MAD/FitnessApp/app/src/main/res/layout/activity_fastingplans.xml" value="0.264" />
+        <entry key="..\:/MAD/FitnessApp/app/src/main/res/layout/activity_fastingstopwatch.xml" value="0.25416666666666665" />
+        <entry key="..\:/MAD/FitnessApp/app/src/main/res/layout/activity_goalsoverview.xml" value="0.264" />
+        <entry key="..\:/MAD/FitnessApp/app/src/main/res/layout/activity_main.xml" value="0.25416666666666665" />
+        <entry key="..\:/MAD/FitnessApp/app/src/main/res/layout/activity_waterconsuptionplans.xml" value="0.2" />
+        <entry key="..\:/MAD/FitnessApp/app/src/main/res/layout/activity_waterdashboard.xml" value="0.25416666666666665" />
+        <entry key="..\:/MAD/FitnessApp/app/src/main/res/layout/activity_waterform.xml" value="0.25416666666666665" />
+        <entry key="..\:/MAD/FitnessApp/app/src/main/res/layout/activity_welcome.xml" value="0.21981981981981982" />
+        <entry key="app/src/main/res/drawable/greeting_bg.xml" value="0.23981481481481481" />
+        <entry key="app/src/main/res/drawable/healthjournal_bg.xml" value="0.1" />
+        <entry key="app/src/main/res/drawable/ic_baseline_calendar_today_24.xml" value="0.1" />
+        <entry key="app/src/main/res/drawable/ic_baseline_emoji_emotions_24.xml" value="0.23981481481481481" />
+        <entry key="app/src/main/res/drawable/ic_editbtn1.xml" value="0.2071111111111111" />
+        <entry key="app/src/main/res/drawable/progress_bg.xml" value="0.1" />
+        <entry key="app/src/main/res/font/asap.xml" value="0.25092592592592594" />
+        <entry key="app/src/main/res/font/asap_bold.xml" value="0.1" />
+        <entry key="app/src/main/res/font/asap_bold_italic.xml" value="0.1" />
+        <entry key="app/src/main/res/layout/activity_aboutyou.xml" value="0.29791666666666666" />
+        <entry key="app/src/main/res/layout/activity_appoverview.xml" value="0.29791666666666666" />
+        <entry key="app/src/main/res/layout/activity_bmi_category.xml" value="0.1814814814814815" />
+        <entry key="app/src/main/res/layout/activity_dailygoals.xml" value="0.29791666666666666" />
+        <entry key="app/src/main/res/layout/activity_display_bmi.xml" value="0.1814814814814815" />
+        <entry key="app/src/main/res/layout/activity_enter_height.xml" value="0.1" />
+        <entry key="app/src/main/res/layout/activity_fastingform.xml" value="0.20728306719895756" />
+        <entry key="app/src/main/res/layout/activity_fastingplans.xml" value="0.28229166666666666" />
+        <entry key="app/src/main/res/layout/activity_fastingstopwatch.xml" value="0.28229166666666666" />
+        <entry key="app/src/main/res/layout/activity_goalsoverview.xml" value="0.17222222222222222" />
+        <entry key="app/src/main/res/layout/activity_health_journal.xml" value="0.1" />
+        <entry key="app/src/main/res/layout/activity_personal_data.xml" value="0.11687318105128257" />
+        <entry key="app/src/main/res/layout/activity_personal_details.xml" value="0.1" />
+        <entry key="app/src/main/res/layout/activity_progress.xml" value="0.2895071286799206" />
+        <entry key="app/src/main/res/layout/activity_waterconsuptionplans.xml" value="0.2265625" />
+        <entry key="app/src/main/res/layout/activity_waterform.xml" value="0.2265625" />
+        <entry key="app/src/main/res/layout/activity_welcome.xml" value="0.2265625" />
+      </map>
+    </option>
+  </component>
   <component name="ProjectRootManager" version="2" languageLevel="JDK_11" default="true" project-jdk-name="11" project-jdk-type="JavaSDK">
     <output url="file://$PROJECT_DIR$/build/classes" />
   </component>
