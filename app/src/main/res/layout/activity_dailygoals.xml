@@ -4,7 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@drawable/fitness_bg"
+    android:background="@color/grey3"
     android:orientation="vertical"
     android:padding="24dp"
     tools:context=".DailygoalsActivity">
@@ -18,7 +18,7 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:fontFamily="@font/asap_bold"
-            android:text="Daily"
+            android:text="@string/txttitledaily"
             android:textColor="#27D8A1"
 
             android:textSize="24dp" />
@@ -28,7 +28,7 @@
             android:layout_height="wrap_content"
             android:layout_marginLeft="4dp"
             android:fontFamily="@font/asap_bold"
-            android:text="Goals"
+            android:text="@string/txttitlegoals"
             android:textColor="#fff"
             android:textSize="24dp"
 
@@ -41,7 +41,7 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:fontFamily="@font/asap_bold"
-        android:text="Set a daily goal"
+        android:text="@string/txtdailygoalsdescription"
         android:textColor="#fff"
         android:textSize="14dp">
 
@@ -73,7 +73,7 @@
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:fontFamily="@font/asap_bold"
-                        android:text="Fasting"
+                        android:text="@string/txtdailygoalsfasting"
                         android:textColor="#348D71"
                         android:textSize="24dp" />
 
@@ -226,7 +226,7 @@
                         android:layout_width="163dp"
                         android:layout_height="wrap_content"
                         android:fontFamily="@font/asap_bold"
-                        android:text="Water Consumption"
+                        android:text="@string/txtdailygoalswater"
                         android:textColor="#348D71"
                         android:textSize="24dp" />
 
