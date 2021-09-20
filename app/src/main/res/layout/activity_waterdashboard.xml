@@ -22,6 +22,9 @@
         android:id="@+id/rere"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
         tools:layout_editor_absoluteX="12dp">
 
         <androidx.cardview.widget.CardView
@@ -47,6 +50,7 @@
                     android:layout_marginTop="10dp">
 
                     <TextView
+                        android:id="@+id/waterDailyQty"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:layout_marginLeft="140dp"
@@ -57,11 +61,12 @@
                         android:textSize="25sp" />
 
                     <TextView
+                        android:id="@+id/totalConsumed"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:layout_alignParentStart="true"
                         android:layout_marginStart="99dp"
-                        android:text="@string/txtdrinked"
+                        android:text="0"
                         android:textSize="25sp" />
 
                 </RelativeLayout>
@@ -101,9 +106,9 @@
         android:layout_marginStart="20dp"
         android:layout_marginEnd="20dp"
         android:layout_marginBottom="100dp"
-        app:layout_constraintBottom_toBottomOf="parent"
         app:cardCornerRadius="20dp"
         app:cardElevation="20dp"
+        app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHeight_max="00dp"
         app:layout_constraintStart_toStartOf="parent"
@@ -192,8 +197,7 @@
                     <ImageView
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:background="@mipmap/ic_tea"
-                        />
+                        android:background="@mipmap/ic_tea" />
 
                     <TextView
                         android:layout_width="wrap_content"
@@ -232,7 +236,7 @@
                     <ImageView
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:background="@mipmap/ic_cola"/>
+                        android:background="@mipmap/ic_cola" />
 
                     <TextView
                         android:layout_width="wrap_content"
@@ -259,8 +263,7 @@
                     <ImageView
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:background="@mipmap/ic_juice"
-                        />
+                        android:background="@mipmap/ic_juice" />
 
                     <TextView
                         android:layout_width="wrap_content"
@@ -302,6 +305,7 @@
     </androidx.cardview.widget.CardView>
 
     <Button
+        android:id="@+id/reset"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="@string/txtreset"
