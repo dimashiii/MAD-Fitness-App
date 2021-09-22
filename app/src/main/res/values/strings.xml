@@ -70,4 +70,15 @@
     <string name="times"> Times</string>
     <string name="consumption">Consumption</string>
     <string name="ml">ml</string>
+
+
+    <string name="txtPlanTopic">Let\'s Create a Workout Plan</string>
+    <string name="planName">Plan Name</string>
+    <string name="planDuration">Plan Duration</string>
+    <string name="workouts">Workouts</string>
+    <string name="addExerciseTxt">Add Exercises</string>
+    <string name="ExerciseName">Exercise Name</string>
+    <string name="count">Exercise Count</string>
+    <string name="ExerciseDuration">Exercise Duration</string>
+    <string name="AddNextExercise">Add Next Exercise</string>
 </resources>

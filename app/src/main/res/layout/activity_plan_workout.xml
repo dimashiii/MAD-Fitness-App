@@ -1,0 +1,309 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    tools:context=".PlanWorkout">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/constraintLayout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:layout_editor_absoluteX="-58dp"
+        tools:layout_editor_absoluteY="117dp">
+
+        <ImageView
+            android:id="@+id/imageView5"
+            android:layout_width="450dp"
+            android:layout_height="400dp"
+            android:layout_marginStart="4dp"
+            android:layout_marginBottom="51dp"
+            app:layout_constraintBottom_toTopOf="@+id/cardView2"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.54"
+            app:layout_constraintStart_toStartOf="parent"
+            app:srcCompat="@drawable/workout3" />
+
+        <TextView
+            android:id="@+id/textPlaneName"
+            android:layout_width="298dp"
+            android:layout_height="0dp"
+            android:layout_marginTop="80dp"
+            android:layout_marginEnd="50dp"
+            android:fontFamily="@font/quicksand_bold"
+            android:text="Weekly Plan"
+            android:textColor="#FFFFFF"
+            android:textSize="48sp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+
+        <androidx.cardview.widget.CardView
+            android:id="@+id/cardView2"
+            android:layout_width="380dp"
+            android:layout_height="75dp"
+            android:layout_marginStart="12dp"
+            android:layout_marginEnd="12dp"
+            android:layout_marginBottom="8dp"
+            app:cardBackgroundColor="@color/white"
+            app:cardCornerRadius="16dp"
+            app:layout_constraintBottom_toTopOf="@+id/cardView4"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent">
+
+            <TextView
+                android:id="@+id/textexercisename1"
+                android:layout_width="154dp"
+                android:layout_height="30dp"
+                android:layout_marginStart="10dp"
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="15dp"
+                android:fontFamily="@font/asap_bold"
+                android:paddingLeft="5dp"
+                android:text="Plank x12"
+                android:textColor="@color/green2"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <TextView
+                android:id="@+id/textexerciseduration"
+                android:layout_width="123dp"
+                android:layout_height="23dp"
+                android:layout_marginStart="10dp"
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="40dp"
+                android:fontFamily="@font/asap_bold"
+                android:paddingLeft="5dp"
+                android:text="00.30s "
+                android:textColor="@color/black"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <ImageView
+                android:id="@+id/plank"
+                android:layout_width="80dp"
+                android:layout_height="75dp"
+                android:layout_marginLeft="125dp"
+                app:srcCompat="@drawable/plank" />
+
+
+            <Button
+                android:id="@+id/editbtn2"
+                android:layout_width="65dp"
+                android:layout_height="36dp"
+                android:layout_marginStart="225dp"
+                android:layout_marginLeft="245dp"
+                android:layout_marginTop="25dp"
+                android:fontFamily="@font/quicksand_bold"
+                android:text="Edit"
+                android:textColor="@color/white"
+                android:textSize="8sp"
+                app:backgroundTint="@color/green4main" />
+
+            <Button
+                android:id="@+id/deletebtn"
+                android:layout_width="65dp"
+                android:layout_height="36dp"
+                android:layout_marginStart="300dp"
+                android:layout_marginLeft="310dp"
+                android:layout_marginTop="25dp"
+                android:fontFamily="@font/quicksand_bold"
+                android:text="Delete"
+                android:textColor="@color/white"
+                android:textSize="8sp"
+                app:backgroundTint="@color/green4main" />
+
+        </androidx.cardview.widget.CardView>
+
+        <androidx.cardview.widget.CardView
+            android:id="@+id/cardView3"
+            android:layout_width="380dp"
+            android:layout_height="75dp"
+            android:layout_marginStart="12dp"
+            android:layout_marginEnd="12dp"
+            android:layout_marginBottom="43dp"
+            app:cardCornerRadius="16dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent">
+
+            <TextView
+                android:id="@+id/textjumpingJacktopic"
+                android:layout_width="154dp"
+                android:layout_height="30dp"
+                android:layout_marginStart="10dp"
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="15dp"
+                android:fontFamily="@font/asap_bold"
+                android:paddingLeft="5dp"
+                android:text="Jumping Jack x12"
+                android:textColor="@color/green2"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <TextView
+                android:id="@+id/textjumpingJack"
+                android:layout_width="123dp"
+                android:layout_height="23dp"
+                android:layout_marginStart="10dp"
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="40dp"
+                android:fontFamily="@font/asap_bold"
+                android:paddingLeft="5dp"
+                android:text="00.30s "
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <ImageView
+                android:id="@+id/jumpingJack"
+                android:layout_width="80dp"
+                android:layout_height="65dp"
+                android:layout_marginLeft="125dp"
+                app:srcCompat="@drawable/jumpingjack" />
+
+            <Button
+                android:id="@+id/editbtn4"
+                android:layout_width="65dp"
+                android:layout_height="36dp"
+                android:layout_marginStart="225dp"
+                android:layout_marginLeft="245dp"
+                android:layout_marginTop="25dp"
+                android:fontFamily="@font/quicksand_bold"
+                android:text="Edit"
+                android:textColor="@color/white"
+                android:textSize="8sp"
+                app:backgroundTint="@color/green4main" />
+
+            <Button
+                android:id="@+id/deletebtn4"
+                android:layout_width="65dp"
+                android:layout_height="36dp"
+                android:layout_marginStart="300dp"
+                android:layout_marginLeft="310dp"
+                android:layout_marginTop="25dp"
+                android:fontFamily="@font/quicksand_bold"
+                android:text="Delete"
+                android:textColor="@color/white"
+                android:textSize="8sp"
+                app:backgroundTint="@color/green4main" />
+
+
+        </androidx.cardview.widget.CardView>
+
+        <androidx.cardview.widget.CardView
+            android:id="@+id/cardView4"
+            android:layout_width="380dp"
+            android:layout_height="75dp"
+            android:layout_marginStart="12dp"
+            android:layout_marginEnd="12dp"
+            android:layout_marginBottom="8dp"
+            app:cardCornerRadius="16dp"
+            app:layout_constraintBottom_toTopOf="@+id/cardView3"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent">
+
+            <TextView
+                android:id="@+id/textpushUpstopic"
+                android:layout_width="154dp"
+                android:layout_height="30dp"
+                android:layout_marginStart="10dp"
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="15dp"
+                android:fontFamily="@font/asap_bold"
+                android:paddingLeft="5dp"
+                android:text="Push Up x12"
+                android:textColor="@color/green2"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <TextView
+                android:id="@+id/textpushUps"
+                android:layout_width="123dp"
+                android:layout_height="23dp"
+                android:layout_marginStart="10dp"
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="40dp"
+                android:fontFamily="@font/asap_bold"
+                android:paddingLeft="5dp"
+                android:text="00.30s "
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <ImageView
+                android:id="@+id/pushUps"
+                android:layout_width="80dp"
+                android:layout_height="75dp"
+                android:layout_marginLeft="125dp"
+                app:srcCompat="@drawable/pushups" />
+
+            <Button
+                android:id="@+id/editbtn3"
+                android:layout_width="65dp"
+                android:layout_height="36dp"
+                android:layout_marginStart="225dp"
+                android:layout_marginLeft="245dp"
+                android:layout_marginTop="25dp"
+                android:fontFamily="@font/quicksand_bold"
+                android:text="Edit"
+                android:textColor="@color/white"
+                android:textSize="8sp"
+                app:backgroundTint="@color/green4main" />
+
+            <Button
+                android:id="@+id/deletebtn3"
+                android:layout_width="65dp"
+                android:layout_height="36dp"
+                android:layout_marginStart="300dp"
+                android:layout_marginLeft="310dp"
+                android:layout_marginTop="25dp"
+                android:fontFamily="@font/quicksand_bold"
+                android:text="Delete"
+                android:textColor="@color/white"
+                android:textSize="8sp"
+                app:backgroundTint="@color/green4main" />
+
+        </androidx.cardview.widget.CardView>
+
+
+        <TextView
+            android:id="@+id/textPlanDuration"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="196dp"
+            android:layout_marginBottom="184dp"
+            android:fontFamily="@font/quicksand_bold"
+            android:text="7 Days"
+            android:textColor="#FFFFFF"
+            android:textSize="20sp"
+            app:layout_constraintBottom_toBottomOf="@+id/imageView5"
+            app:layout_constraintEnd_toEndOf="@+id/imageView5" />
+
+
+        <Button
+            android:id="@+id/button"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="60dp"
+            android:layout_marginBottom="4dp"
+            android:fitsSystemWindows="true"
+            android:text="Delete Plan"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent" />
+
+        <Button
+            android:id="@+id/button2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="70dp"
+            android:layout_marginBottom="4dp"
+            android:fitsSystemWindows="true"
+            android:text="Save Plan"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintStart_toStartOf="parent" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

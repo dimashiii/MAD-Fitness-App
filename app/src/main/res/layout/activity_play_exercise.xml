@@ -1,0 +1,123 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/black"
+    android:rotationY="360"
+    tools:context=".PlayExercise">
+
+    <Button
+        android:id="@+id/deletebtn6"
+        android:layout_width="65dp"
+        android:layout_height="36dp"
+        android:layout_marginTop="35dp"
+        android:layout_marginEnd="32dp"
+        android:fontFamily="@font/quicksand_bold"
+        android:text="Delete"
+        android:textColor="@color/white"
+        android:textSize="8sp"
+        app:backgroundTint="@color/green4main"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/editbtn6"
+        android:layout_width="65dp"
+        android:layout_height="36dp"
+        android:layout_marginStart="224dp"
+        android:layout_marginBottom="25dp"
+        android:fontFamily="@font/quicksand_bold"
+        android:text="Edit"
+        android:textColor="@color/white"
+        android:textSize="8sp"
+        app:backgroundTint="@color/green4main"
+        app:layout_constraintBottom_toTopOf="@+id/cardView6"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/cardView6"
+        android:layout_width="409dp"
+        android:layout_height="350dp"
+        android:layout_marginStart="1dp"
+        android:layout_marginBottom="70dp"
+        app:layout_constraintBottom_toTopOf="@+id/jumpingJackPlay"
+        app:layout_constraintStart_toStartOf="parent">
+
+        <ImageView
+            android:id="@+id/imageView4"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:srcCompat="@drawable/jumpingjack" />
+    </androidx.cardview.widget.CardView>
+
+    <TextView
+        android:id="@+id/jumpingJackPlay"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="45dp"
+        android:layout_marginEnd="55dp"
+        android:layout_marginBottom="164dp"
+        android:fontFamily="@font/quicksand_bold"
+        android:text="Jumping Jack"
+        android:textColor="@color/green4main"
+        android:textSize="36sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <TextView
+        android:id="@+id/steps"
+        android:layout_width="54dp"
+        android:layout_height="30dp"
+        android:layout_marginTop="84dp"
+        android:layout_marginEnd="40dp"
+        android:fontFamily="@font/quicksand_bold"
+        android:text="x 12"
+        android:textColor="#FFFFFF"
+        android:textSize="24dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/cardView6" />
+
+    <ImageView
+        android:id="@+id/forwardbtn"
+        android:layout_width="60dp"
+        android:layout_height="60dp"
+        android:layout_marginEnd="73dp"
+        android:layout_marginBottom="66dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:srcCompat="@drawable/ic_baseline_play_arrow_24"
+        tools:ignore="VectorDrawableCompat" />
+
+    <ImageView
+        android:id="@+id/backbtn"
+        android:layout_width="60dp"
+        android:layout_height="60dp"
+        android:layout_marginStart="73dp"
+        android:layout_marginBottom="66dp"
+        android:clickable="true"
+        android:rotationY="180"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:srcCompat="@drawable/ic_baseline_play_arrow_24"
+        tools:ignore="VectorDrawableCompat" />
+
+    <ImageView
+        android:id="@+id/pausebtn"
+        android:layout_width="60dp"
+        android:layout_height="60dp"
+        android:layout_marginStart="42dp"
+        android:layout_marginEnd="43dp"
+        android:layout_marginBottom="66dp"
+        android:clickable="true"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/forwardbtn"
+        app:layout_constraintStart_toEndOf="@+id/backbtn"
+        app:srcCompat="@drawable/pause"
+        tools:ignore="VectorDrawableCompat" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

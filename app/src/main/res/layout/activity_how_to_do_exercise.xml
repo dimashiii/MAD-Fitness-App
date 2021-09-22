@@ -1,0 +1,138 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/black"
+    android:paddingLeft="5dp"
+    android:paddingTop="5dp"
+    android:paddingRight="5dp"
+    android:paddingBottom="5dp"
+    tools:context=".HowToDoExercise">
+
+    <Button
+        android:id="@+id/deletebtn5"
+        android:layout_width="65dp"
+        android:layout_height="36dp"
+        android:layout_marginEnd="38dp"
+        android:layout_marginBottom="76dp"
+        android:fontFamily="@font/quicksand_bold"
+        android:text="Delete"
+        android:textColor="@color/white"
+        android:textSize="8sp"
+        app:backgroundTint="@color/green4main"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent" />
+
+    <Button
+        android:id="@+id/editbtn5"
+        android:layout_width="65dp"
+        android:layout_height="36dp"
+        android:layout_marginStart="208dp"
+        android:layout_marginBottom="76dp"
+        android:fontFamily="@font/quicksand_bold"
+        android:text="Edit"
+        android:textColor="@color/white"
+        android:textSize="8sp"
+        app:backgroundTint="@color/green4main"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/cardView5"
+        android:layout_width="410dp"
+        android:layout_height="214dp"
+        android:layout_marginTop="30dp"
+        android:layout_marginBottom="36dp"
+        app:cardCornerRadius="18dp"
+        app:layout_constraintBottom_toTopOf="@+id/textView7"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView23">
+
+        <ImageView
+            android:id="@+id/imageView3"
+            android:layout_width="match_parent"
+            android:layout_height="214dp"
+            android:layout_marginTop="23dp"
+            app:srcCompat="@drawable/jumpingjack" />
+    </androidx.cardview.widget.CardView>
+
+
+    <TextView
+        android:id="@+id/textView7"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="64dp"
+        android:layout_marginTop="56dp"
+        android:text="Jumping Jack"
+        android:textColor="@color/green4main"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/cardView5"
+        tools:fontFamily="@font/quicksand_bold"
+        tools:textSize="24dp" />
+
+    <TextView
+        android:id="@+id/textView23"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="90dp"
+        android:layout_marginTop="15dp"
+
+        android:layout_marginEnd="1dp"
+        android:text="HOW TO"
+        android:textColor="@color/white"
+        app:layout_constraintBottom_toTopOf="@+id/cardView5"
+        app:layout_constraintEnd_toStartOf="@+id/textView10"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:fontFamily="@font/quicksand_bold"
+        tools:textSize="34sp" />
+
+    <TextView
+        android:id="@+id/textView10"
+        android:layout_width="101dp"
+        android:layout_height="51dp"
+        android:layout_marginStart="3dp"
+        android:layout_marginTop="15dp"
+        android:text="DO...."
+        android:textColor="@color/green4main"
+        app:layout_constraintStart_toEndOf="@+id/textView23"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:fontFamily="@font/quicksand_bold"
+        tools:textSize="34sp" />
+
+    <TextView
+        android:id="@+id/textView25"
+        android:layout_width="62dp"
+        android:layout_height="30dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="56dp"
+        android:text="x 12"
+        android:textColor="@color/white"
+        app:layout_constraintStart_toEndOf="@+id/textView7"
+        app:layout_constraintTop_toBottomOf="@+id/cardView5"
+        tools:fontFamily="@font/quicksand_bold"
+        tools:textSize="24sp" />
+
+    <TextView
+        android:id="@+id/exerciseDescription"
+        android:layout_width="350dp"
+        android:layout_height="200dp"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="20dp"
+        android:paddingLeft="5dp"
+        android:paddingTop="5dp"
+        android:paddingRight="5dp"
+        android:paddingBottom="5dp"
+        android:text=" Stand up straight, hold your arms at your sides, and stand with your feet shoulder-width apart. Relax your shoulders back and down along your spine. Keep the natural curve of your neck by relaxing your jaw too. Hold the top of your head up and directly between the tops of your shoulders. Keep your hips over your heels and relax your pelvis. From an upright, standing position widen your stance so that your feet are below our shoulders. Keep your arms beside your body and relaxed"
+        android:textColor="@color/white"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView7"
+        tools:fontFamily="@font/asap_bold"
+        tools:textSize="16dp" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
