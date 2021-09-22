@@ -1,102 +1,110 @@
-<RelativeLayout
-    xmlns:android="http://schemas.android.com/apk/res/android"
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
-    xmlns:fab="http://schemas.android.com/apk/res-auto"
     android:layout_width="match_parent"
-    android:background="@mipmap/water_bg"
     android:layout_height="match_parent"
-    >
+    android:background="@mipmap/water_bg">
 
     <androidx.appcompat.widget.Toolbar
         android:id="@+id/toolbar"
-        android:layout_height="wrap_content"
         android:layout_width="match_parent"
+        android:layout_height="wrap_content"
         android:minHeight="?attr/actionBarSize"
         app:contentInsetLeft="0dp"
         app:contentInsetStart="16dp"
-        app:theme="@style/ThemeOverlay.AppCompat.Dark.ActionBar"
-        />
+        app:theme="@style/ThemeOverlay.AppCompat.Dark.ActionBar" />
 
     <LinearLayout
-        android:layout_width="match_parent"
-        android:layout_below="@+id/toolbar"
-        android:theme="@style/ThemeOverlay.AppCompat.Dark.ActionBar"
         android:id="@+id/add_reminder_layout_top"
+        android:layout_width="match_parent"
+        android:layout_height="148dp"
+        android:layout_below="@+id/toolbar"
         android:orientation="vertical"
-        android:layout_height="148dp">
+        android:theme="@style/ThemeOverlay.AppCompat.Dark.ActionBar">
 
-        <TextView
+        <EditText
+            android:id="@+id/planTitle"
+            style="@style/Widget.AppCompat.TextView"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_gravity="center"
+            android:background="@android:color/transparent"
+            android:cursorVisible="true"
+            android:focusable="true"
             android:fontFamily="@font/asap_bold"
-            android:gravity="center"
-            android:textColor="@color/black"
+            android:inputType="text"
+            android:maxLines="1"
+            android:selectAllOnFocus="true"
             android:text="@string/txtbegwplan"
+            android:textAlignment="center"
+            android:textColor="@color/black"
             android:textSize="34sp" />
+
     </LinearLayout>
 
 
     <androidx.cardview.widget.CardView
         android:id="@+id/cardviewone"
-        android:layout_marginBottom="20dp"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_below="@+id/add_reminder_layout_top"
         android:layout_marginTop="-70dp"
+        android:layout_marginBottom="20dp"
         android:orientation="horizontal"
         app:cardCornerRadius="20dp"
         app:cardElevation="20dip">
+
         <ScrollView
             android:layout_width="fill_parent"
-            android:layout_below="@id/add_reminder_layout_top"
-            android:layout_height="fill_parent">
+            android:layout_height="fill_parent"
+            android:layout_below="@id/add_reminder_layout_top">
 
             <LinearLayout
                 android:layout_width="match_parent"
-                android:orientation="vertical"
-                android:layout_height="wrap_content">
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
 
                 <RelativeLayout
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content">
 
                 </RelativeLayout>
+
                 <RelativeLayout
+                    android:id="@+id/waterDate"
                     android:layout_width="match_parent"
-                    android:clickable="true"
-                    android:onClick="setDate"
-                    android:layout_marginEnd="10dp"
+                    android:layout_height="70dp"
                     android:layout_marginStart="10dp"
                     android:layout_marginTop="10dp"
+                    android:layout_marginEnd="10dp"
                     android:background="@drawable/corner1"
-                    android:layout_height="70dp">
+                    android:clickable="true"
+                    android:focusable="true">
 
                     <ImageView
                         android:id="@+id/date_icon"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:layout_alignParentLeft="true"
+                        android:layout_centerVertical="true"
                         android:layout_marginLeft="16dp"
                         android:layout_marginRight="32dp"
-                        android:background="@mipmap/date"
-                        android:layout_centerVertical="true" />
+                        android:background="@mipmap/date" />
 
                     <LinearLayout
                         android:layout_width="wrap_content"
-                        android:orientation="vertical"
+                        android:layout_height="wrap_content"
                         android:layout_centerVertical="true"
                         android:layout_toRightOf="@id/date_icon"
-                        android:layout_height="wrap_content">
+                        android:orientation="vertical">
 
                         <TextView
-                            android:textColor="@color/black"
                             android:layout_width="wrap_content"
-                            android:textSize="15dp"
                             android:layout_height="wrap_content"
-                            android:text="Date" />
+                            android:text="Date"
+                            android:textColor="@color/black"
+                            android:textSize="15dp" />
 
                         <TextView
+                            android:id="@+id/waterDateValue"
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
                             android:text="@string/txtdate"
@@ -108,40 +116,42 @@
                 </RelativeLayout>
 
                 <RelativeLayout
+                    android:id="@+id/waterTime"
                     android:layout_width="match_parent"
-                    android:clickable="true"
-                    android:onClick="setTime"
-                    android:layout_marginEnd="10dp"
+                    android:layout_height="70dp"
                     android:layout_marginStart="10dp"
                     android:layout_marginTop="10dp"
+                    android:layout_marginEnd="10dp"
                     android:background="@drawable/corner1"
-                    android:layout_height="70dp">
+                    android:clickable="true"
+                    android:focusable="true">
 
                     <ImageView
                         android:id="@+id/time_icon"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:layout_alignParentLeft="true"
+                        android:layout_centerVertical="true"
                         android:layout_marginLeft="16dp"
                         android:layout_marginRight="32dp"
-                        android:background="@mipmap/time"
-                        android:layout_centerVertical="true" />
+                        android:background="@mipmap/time" />
 
                     <LinearLayout
                         android:layout_width="wrap_content"
-                        android:orientation="vertical"
+                        android:layout_height="wrap_content"
                         android:layout_centerVertical="true"
                         android:layout_toRightOf="@id/time_icon"
-                        android:layout_height="wrap_content">
+                        android:orientation="vertical">
 
                         <TextView
-                            android:textColor="@color/black"
                             android:layout_width="wrap_content"
-                            android:textSize="15dp"
                             android:layout_height="wrap_content"
-                            android:text="Time" />
+                            android:text="Time"
+                            android:textColor="@color/black"
+                            android:textSize="15dp" />
 
                         <TextView
+                            android:id="@+id/waterTimeValue"
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
                             android:text="@string/txtwtime"
@@ -154,35 +164,35 @@
 
                 <RelativeLayout
                     android:layout_width="match_parent"
+                    android:layout_height="70dp"
+                    android:layout_marginStart="10dp"
                     android:layout_marginTop="10dp"
                     android:layout_marginEnd="10dp"
-                    android:layout_marginStart="10dp"
-                    android:background="@drawable/corner1"
-                    android:layout_height="70dp">
+                    android:background="@drawable/corner1">
 
                     <ImageView
                         android:id="@+id/repeat_icon"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:layout_alignParentLeft="true"
+                        android:layout_centerVertical="true"
                         android:layout_marginLeft="16dp"
                         android:layout_marginRight="32dp"
-                        android:background="@mipmap/repeat"
-                        android:layout_centerVertical="true" />
+                        android:background="@mipmap/repeat" />
 
                     <LinearLayout
                         android:layout_width="wrap_content"
-                        android:orientation="vertical"
+                        android:layout_height="wrap_content"
                         android:layout_centerVertical="true"
                         android:layout_toRightOf="@id/repeat_icon"
-                        android:layout_height="wrap_content">
+                        android:orientation="vertical">
 
                         <TextView
-                            android:textColor="@color/black"
                             android:layout_width="wrap_content"
-                            android:textSize="15dp"
                             android:layout_height="wrap_content"
-                            android:text="Repeat" />
+                            android:text="Repeat"
+                            android:textColor="@color/black"
+                            android:textSize="15dp" />
 
                         <TextView
                             android:layout_width="wrap_content"
@@ -194,54 +204,56 @@
                     </LinearLayout>
 
                     <Switch
+                        android:id="@+id/waterRepeat"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:layout_centerVertical="true"
                         android:layout_alignParentRight="true"
-                        android:layout_marginRight="16dp"
+                        android:layout_centerVertical="true"
                         android:layout_marginLeft="8dp"
-                        android:onClick="onSwitchRepeat"
+                        android:layout_marginRight="16dp"
                         android:checked="true"
-                        android:textOn="On"
-                        android:textOff="Off"/>
+                        android:textOff="Off"
+                        android:textOn="On" />
 
                 </RelativeLayout>
 
                 <RelativeLayout
+                    android:id="@+id/waterRepeatNo"
                     android:layout_width="match_parent"
-                    android:clickable="true"
-                    android:onClick="setRepeatNo"
+                    android:layout_height="70dp"
                     android:layout_marginStart="10dp"
-                    android:layout_marginEnd="10dp"
                     android:layout_marginTop="10dp"
+                    android:layout_marginEnd="10dp"
                     android:background="@drawable/corner1"
-                    android:layout_height="70dp">
+                    android:clickable="true"
+                    android:focusable="true">
 
                     <ImageView
                         android:id="@+id/repeat_no_icon"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:layout_alignParentLeft="true"
+                        android:layout_centerVertical="true"
                         android:layout_marginLeft="16dp"
                         android:layout_marginRight="32dp"
-                        android:background="@mipmap/repetation"
-                        android:layout_centerVertical="true" />
+                        android:background="@mipmap/repetation" />
 
                     <LinearLayout
                         android:layout_width="wrap_content"
-                        android:orientation="vertical"
+                        android:layout_height="wrap_content"
                         android:layout_centerVertical="true"
                         android:layout_toRightOf="@id/repeat_no_icon"
-                        android:layout_height="wrap_content">
+                        android:orientation="vertical">
 
                         <TextView
-                            android:textColor="@color/black"
                             android:layout_width="wrap_content"
-                            android:textSize="15dp"
                             android:layout_height="wrap_content"
-                            android:text="No of Repeat" />
+                            android:text="No of Repeat"
+                            android:textColor="@color/black"
+                            android:textSize="15dp" />
 
                         <TextView
+                            android:id="@+id/waterRepeatNoValue"
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
                             android:text="@string/txtreno"
@@ -253,32 +265,33 @@
                 </RelativeLayout>
 
                 <RelativeLayout
+                    android:id="@+id/waterDaily"
                     android:layout_width="match_parent"
-                    android:clickable="true"
-                    android:onClick="selectRepeatType"
-                    android:layout_marginEnd="10dp"
+                    android:layout_height="70dp"
                     android:layout_marginStart="10dp"
                     android:layout_marginTop="10dp"
-                    android:background="@drawable/corner1"
+                    android:layout_marginEnd="10dp"
                     android:layout_marginBottom="10dp"
-                    android:layout_height="70dp">
+                    android:background="@drawable/corner1"
+                    android:clickable="true"
+                    android:focusable="true">
 
                     <ImageView
                         android:id="@+id/repeat_type_icon"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:layout_alignParentLeft="true"
+                        android:layout_centerVertical="true"
                         android:layout_marginLeft="16dp"
                         android:layout_marginRight="32dp"
-                        android:background="@mipmap/draw"
-                        android:layout_centerVertical="true" />
+                        android:background="@mipmap/draw" />
 
                     <LinearLayout
                         android:layout_width="wrap_content"
-                        android:orientation="vertical"
+                        android:layout_height="wrap_content"
                         android:layout_centerVertical="true"
                         android:layout_toRightOf="@id/repeat_type_icon"
-                        android:layout_height="wrap_content">
+                        android:orientation="vertical">
 
                         <TextView
                             android:layout_width="wrap_content"
@@ -288,6 +301,7 @@
                             android:textSize="15dp" />
 
                         <TextView
+                            android:id="@+id/waterDailyValue"
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
                             android:text="@string/txtconrepat"
@@ -303,7 +317,9 @@
         </ScrollView>
     </androidx.cardview.widget.CardView>
 
+
     <Button
+        android:id="@+id/save"
         android:layout_width="95dp"
         android:layout_height="49dp"
         android:layout_alignParentStart="true"
@@ -317,6 +333,7 @@
         android:text="@string/btnsave" />
 
     <Button
+        android:id="@+id/cancel"
         android:layout_width="111dp"
         android:layout_height="51dp"
         android:layout_alignParentStart="true"

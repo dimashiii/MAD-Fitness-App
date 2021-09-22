@@ -48,9 +48,12 @@
     </TextView>
 
     <androidx.cardview.widget.CardView
+        android:id="@+id/fastingBtn"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_marginTop="16dp"
+        android:clickable="true"
+        android:focusable="true"
         app:cardCornerRadius="8dp">
 
         <LinearLayout
@@ -86,32 +89,27 @@
 
                         <ImageView
                             android:layout_width="wrap_content"
-                            android:layout_height="wrap_content"
-                             />
+                            android:layout_height="wrap_content" />
 
                         <ImageView
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
-                            android:layout_marginLeft="2dp"
-                             />
+                            android:layout_marginLeft="2dp" />
 
                         <ImageView
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
-                            android:layout_marginLeft="2dp"
-                             />
+                            android:layout_marginLeft="2dp" />
 
                         <ImageView
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
-                            android:layout_marginLeft="2dp"
-                             />
+                            android:layout_marginLeft="2dp" />
 
                         <ImageView
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
-                            android:layout_marginLeft="2dp"
-                             />
+                            android:layout_marginLeft="2dp" />
 
                     </LinearLayout>
 
@@ -131,8 +129,7 @@
                         <ImageView
                             android:layout_width="wrap_content"
                             android:layout_height="match_parent"
-                            android:layout_marginLeft="16dp"
-                             />
+                            android:layout_marginLeft="16dp" />
 
                         <LinearLayout
                             android:layout_width="wrap_content"
@@ -201,6 +198,7 @@
     </androidx.cardview.widget.CardView>
 
     <androidx.cardview.widget.CardView
+        android:id="@+id/waterBtn"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_marginTop="16dp"
@@ -239,32 +237,27 @@
 
                         <ImageView
                             android:layout_width="wrap_content"
-                            android:layout_height="wrap_content"
-                             />
+                            android:layout_height="wrap_content" />
 
                         <ImageView
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
-                            android:layout_marginLeft="2dp"
-                             />
+                            android:layout_marginLeft="2dp" />
 
                         <ImageView
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
-                            android:layout_marginLeft="2dp"
-                             />
+                            android:layout_marginLeft="2dp" />
 
                         <ImageView
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
-                            android:layout_marginLeft="2dp"
-                             />
+                            android:layout_marginLeft="2dp" />
 
                         <ImageView
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
-                            android:layout_marginLeft="2dp"
-                             />
+                            android:layout_marginLeft="2dp" />
 
                     </LinearLayout>
 
@@ -284,8 +277,7 @@
                         <ImageView
                             android:layout_width="wrap_content"
                             android:layout_height="match_parent"
-                            android:layout_marginLeft="16dp"
-                             />
+                            android:layout_marginLeft="16dp" />
 
                         <LinearLayout
                             android:layout_width="wrap_content"
@@ -352,8 +344,6 @@
         </LinearLayout>
 
     </androidx.cardview.widget.CardView>
-
-
 
 
 </LinearLayout>
