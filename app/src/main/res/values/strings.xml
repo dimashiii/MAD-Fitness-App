@@ -4,20 +4,20 @@
     <string name="txtfastingimg">Fasting Img</string>
     <string name="btnget">Get Started</string>
     <string name="btnstart">Start Now</string>
-    <string name="txttime">00:00:00</string>
+    <string name="txttime">00:00</string>
     <string name="txtfastingtimer">Fasting Timer</string>
     <string name="btnstop1">Finish Fasting</string>
     <string name="txtplanssub">Set daily fasting and water consumption plans</string>
     <string name="btnsave">Save</string>
     <string name="btncancel">Cancel</string>
     <string name="txtdate">2021/10/12</string>
-    <string name="txtwtime">10:00 AM</string>
+    <string name="txtwtime">10:00pm</string>
     <string name="txtrepeat">Repeat Once</string>
     <string name="txtreno">2 Times</string>
-    <string name="txtbegwplan">Title</string>
+    <string name="txtbegwplan">Edit Beginner Plan</string>
     <string name="txtwatertarget">Daily Water Consumption Target</string>
     <string name="txtconrepat">2000ml</string>
-    <string name="txtdrinked">0</string>
+    <string name="txtdrinked">200</string>
     <string name="txtrepeattype">Repeat Type</string>
     <string name="txtfastingtype">Weekdays</string>
     <string name="txtwateruse">Daily Water Consumption</string>
@@ -67,7 +67,4 @@
     <string name="txtinterwaterdelete">Delete</string>
     <string name="txtwaterexpertedit">Edit</string>
     <string name="txtwaterexpertdelete">Delete</string>
-    <string name="times"> Times</string>
-    <string name="consumption">Consumption</string>
-    <string name="ml">ml</string>
 </resources>
