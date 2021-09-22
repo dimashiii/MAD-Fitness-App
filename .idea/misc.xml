@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="DesignSurface">
+    <option name="filePathToZoomLevelMap">
+      <map>
+        <entry key="..\:/MAD/FitnessApp/app/src/main/res/drawable/bg_main.xml" value="0.23378378378378378" />
+        <entry key="..\:/MAD/FitnessApp/app/src/main/res/drawable/bgbtnblue.xml" value="0.23378378378378378" />
+        <entry key="..\:/MAD/FitnessApp/app/src/main/res/drawable/corner1.xml" value="0.23378378378378378" />
+        <entry key="..\:/MAD/FitnessApp/app/src/main/res/drawable/ic_launcher_background.xml" value="0.23378378378378378" />
+        <entry key="..\:/MAD/FitnessApp/app/src/main/res/layout/activity_aboutyou.xml" value="0.264" />
+        <entry key="..\:/MAD/FitnessApp/app/src/main/res/layout/activity_appoverview.xml" value="0.21981981981981982" />
+        <entry key="..\:/MAD/FitnessApp/app/src/main/res/layout/activity_dailygoals.xml" value="0.2" />
+        <entry key="..\:/MAD/FitnessApp/app/src/main/res/layout/activity_fastingform.xml" value="0.25416666666666665" />
+        <entry key="..\:/MAD/FitnessApp/app/src/main/res/layout/activity_fastingplans.xml" value="0.264" />
+        <entry key="..\:/MAD/FitnessApp/app/src/main/res/layout/activity_fastingstopwatch.xml" value="0.25416666666666665" />
+        <entry key="..\:/MAD/FitnessApp/app/src/main/res/layout/activity_goalsoverview.xml" value="0.264" />
+        <entry key="..\:/MAD/FitnessApp/app/src/main/res/layout/activity_main.xml" value="0.25416666666666665" />
+        <entry key="..\:/MAD/FitnessApp/app/src/main/res/layout/activity_waterconsuptionplans.xml" value="0.2" />
+        <entry key="..\:/MAD/FitnessApp/app/src/main/res/layout/activity_waterdashboard.xml" value="0.25416666666666665" />
+        <entry key="..\:/MAD/FitnessApp/app/src/main/res/layout/activity_waterform.xml" value="0.25416666666666665" />
+        <entry key="..\:/MAD/FitnessApp/app/src/main/res/layout/activity_welcome.xml" value="0.21981981981981982" />
+        <entry key="..\:/Program_File/fito-main/fito-main/app/src/main/res/drawable/ic_plus.xml" value="0.20260416666666667" />
+        <entry key="..\:/Program_File/fito-main/fito-main/app/src/main/res/layout/activity_dailygoals.xml" value="0.18645833333333334" />
+        <entry key="..\:/Program_File/fito-main/fito-main/app/src/main/res/layout/activity_fastingform.xml" value="0.33" />
+        <entry key="..\:/Program_File/fito-main/fito-main/app/src/main/res/layout/activity_fastingplans.xml" value="0.33" />
+        <entry key="..\:/Program_File/fito-main/fito-main/app/src/main/res/layout/activity_fastingstopwatch.xml" value="0.18645833333333334" />
+        <entry key="..\:/Program_File/fito-main/fito-main/app/src/main/res/layout/activity_goalsoverview.xml" value="0.22" />
+        <entry key="..\:/Program_File/fito-main/fito-main/app/src/main/res/layout/activity_main.xml" value="0.12001811594202899" />
+        <entry key="..\:/Program_File/fito-main/fito-main/app/src/main/res/layout/activity_waterconsuptionplans.xml" value="0.18" />
+        <entry key="..\:/Program_File/fito-main/fito-main/app/src/main/res/layout/activity_waterdashboard.xml" value="0.25" />
+        <entry key="..\:/Program_File/fito-main/fito-main/app/src/main/res/layout/activity_waterform.xml" value="0.16" />
+        <entry key="..\:/Program_File/fito-main/fito-main/app/src/main/res/layout/activity_welcome.xml" value="0.1" />
+        <entry key="..\:/Program_File/fito-main/fito-main/app/src/main/res/layout/custom_water_layout.xml" value="0.2" />
+        <entry key="..\:/Program_File/fito-main/fito-main/app/src/main/res/layout/fasting_layout.xml" value="0.18645833333333334" />
+        <entry key="..\:/Program_File/fito-main/fito-main/app/src/main/res/layout/water_consumption_layout.xml" value="0.18645833333333334" />
+      </map>
+    </option>
+  </component>
+  <component name="ProjectRootManager" version="2" languageLevel="JDK_11" default="true" project-jdk-name="11" project-jdk-type="JavaSDK">
+    <output url="file://$PROJECT_DIR$/build/classes" />
+  </component>
+  <component name="ProjectType">
+    <option name="id" value="Android" />
+  </component>
+</project>

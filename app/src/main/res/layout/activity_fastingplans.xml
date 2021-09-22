@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/grey3"
+    android:orientation="vertical"
+    android:padding="24dp"
+    tools:context=".FastingplansActivity">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <TextView
+            android:id="@+id/fasting"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/asap_bold"
+            android:text="@string/txtfasting"
+            android:textColor="#27D8A1"
+            android:textSize="24dp" />
+
+        <TextView
+            android:id="@+id/plans"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="4dp"
+            android:layout_toEndOf="@+id/fasting"
+            android:fontFamily="@font/asap_bold"
+            android:text="@string/txtfastingplans"
+            android:textColor="#fff"
+            android:textSize="24dp"
+
+            />
+
+        <TextView
+            android:id="@+id/tagLine"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/fasting"
+            android:fontFamily="@font/asap_bold"
+            android:text="@string/txtfasttoplan"
+            android:textColor="#fff"
+            android:textSize="14dp">
+
+        </TextView>
+
+        <ImageView
+            android:id="@+id/fastingAdd"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_alignParentEnd="true"
+            android:background="?attr/selectableItemBackground"
+            android:paddingHorizontal="8dp"
+            android:src="@drawable/ic_plus"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+    </RelativeLayout>
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/recyclerView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:listitem="@layout/fasting_layout" />
+
+
+</LinearLayout>
