@@ -16,7 +16,7 @@
         android:layout_marginEnd="89dp"
         android:fontFamily="@font/quicksand_bold"
         android:paddingLeft="45dp"
-        android:text="@string/workouts"
+        android:text="Workouts"
         android:textColor="@color/white"
         android:textSize="34sp"
         app:layout_constraintEnd_toEndOf="parent"

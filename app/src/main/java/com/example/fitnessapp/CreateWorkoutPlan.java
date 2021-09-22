@@ -8,11 +8,17 @@ import android.view.View;
 import android.widget.Button;
 import android.widget.EditText;
 
+import com.example.fitnessapp.model.WorkoutPlanModel;
+import com.google.firebase.database.DatabaseReference;
+
 public class CreateWorkoutPlan extends AppCompatActivity {
 
     EditText enterPlan;
     EditText enterPlanDuration;
     Button btnContinue;
+
+    DatabaseReference dbRef;
+    WorkoutPlanModel plan;
 
 
     @Override
@@ -23,6 +29,8 @@ public class CreateWorkoutPlan extends AppCompatActivity {
         enterPlan = findViewById(R.id.enterPlan);
         enterPlanDuration = findViewById(R.id.enterPlanDuration);
         btnContinue = findViewById(R.id.btnContinue);
+
+        plan = new WorkoutPlanModel();
 
         /* btnContinue.setOnClickListener(new View.OnClickListener() {
             @Override
