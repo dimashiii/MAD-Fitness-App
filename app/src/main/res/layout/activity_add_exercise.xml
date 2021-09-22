@@ -1,0 +1,271 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/black"
+    tools:context=".AddExercise">
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="150dp"
+        android:layout_marginTop="65dp"
+        android:layout_marginEnd="40dp"
+        android:fontFamily="@font/asap_bold"
+        android:text="Add Exercise"
+        android:textColor="@color/green4main"
+        android:textSize="34sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/textView6"
+        android:layout_width="130dp"
+        android:layout_height="22dp"
+        android:layout_marginStart="54dp"
+        android:layout_marginLeft="54dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginEnd="59dp"
+        android:layout_marginRight="59dp"
+        android:fontFamily="@font/asap_bold"
+        android:text="Exercise Duration"
+        android:textColor="#000000"
+        android:textSize="16sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/textView2"
+        app:layout_constraintTop_toBottomOf="@+id/enterExerciseName" />
+
+    <TextView
+        android:id="@+id/textView22"
+        android:layout_width="130dp"
+        android:layout_height="22dp"
+        android:layout_marginStart="52dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="59dp"
+        android:fontFamily="@font/asap_bold"
+        android:text="Duration"
+        android:textColor="@color/white"
+        android:textSize="16sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toEndOf="@+id/textView2"
+        app:layout_constraintTop_toBottomOf="@+id/enterExerciseName" />
+
+    <TextView
+        android:id="@+id/textView8"
+        android:layout_width="111dp"
+        android:layout_height="22dp"
+        android:layout_marginStart="59dp"
+        android:layout_marginBottom="4dp"
+        android:fontFamily="@font/asap_bold"
+        android:text="Description"
+        android:textColor="@color/white"
+        android:textSize="16sp"
+        app:layout_constraintBottom_toTopOf="@+id/enterExerciseDescription"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <TextView
+        android:id="@+id/textView9"
+        android:layout_width="90dp"
+        android:layout_height="22dp"
+        android:layout_marginStart="59dp"
+        android:layout_marginTop="20dp"
+        android:fontFamily="@font/asap_bold"
+        android:text="GIF"
+        android:textColor="@color/white"
+        android:textSize="16sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textInputLayout" />
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="111dp"
+        android:layout_height="22dp"
+        android:layout_marginStart="59dp"
+        android:layout_marginTop="16dp"
+        android:fontFamily="@font/asap_bold"
+        android:text="Count"
+        android:textColor="@color/white"
+        android:textSize="16sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/enterExerciseName" />
+
+    <EditText
+        android:id="@+id/enterExerciseName"
+        android:layout_width="294dp"
+        android:layout_height="36dp"
+        android:layout_marginStart="59dp"
+        android:layout_marginEnd="40dp"
+        android:layout_marginBottom="52dp"
+        android:alpha="4"
+        android:background="#FFFFFF"
+        android:ems="10"
+        android:fontFamily="@font/asap_bold"
+        android:inputType="text"
+        android:lineSpacingExtra="8sp"
+        android:maxLines="1"
+        android:paddingLeft="5dp"
+        android:paddingTop="1dp"
+        android:selectAllOnFocus="false"
+        android:singleLine="true"
+        android:text="Enter Exericse Name"
+        android:textAllCaps="false"
+        android:textColor="#80000000"
+        android:textSize="16sp"
+        app:layout_constraintBottom_toTopOf="@+id/textInputLayout"
+
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <EditText
+        android:id="@+id/enterExerciseDescription"
+        android:layout_width="294dp"
+        android:layout_height="36dp"
+        android:layout_marginStart="59dp"
+        android:layout_marginEnd="59dp"
+        android:layout_marginBottom="32dp"
+        android:background="#FFFFFF"
+        android:ems="10"
+        android:fadeScrollbars="false"
+        android:fontFamily="@font/asap_bold"
+        android:inputType="textPersonName"
+        android:maxLines="4"
+        android:paddingLeft="5dp"
+        android:selectAllOnFocus="false"
+        android:singleLine="true"
+        android:text="Enter Description"
+        android:textColor="#80000000"
+        android:textSize="16sp"
+        app:layout_constraintBottom_toTopOf="@+id/btnSave"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/textInputLayout"
+        android:layout_width="111dp"
+        android:layout_height="36dp"
+        android:layout_marginStart="59dp"
+        android:layout_marginLeft="59dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/enterCount">
+
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <com.google.android.material.textfield.TextInputEditText
+        android:id="@+id/enterDuration"
+        android:layout_width="130dp"
+        android:layout_height="36dp"
+        android:layout_marginTop="32dp"
+        android:layout_marginEnd="36dp"
+        android:background="#FFFFFF"
+        android:hint="Duration"
+        android:paddingLeft="5dp"
+        android:textSize="16sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/textView6" />
+
+    <Button
+        android:id="@+id/btnSave"
+        android:layout_width="120dp"
+        android:layout_height="40dp"
+        android:layout_marginEnd="40dp"
+        android:layout_marginBottom="44dp"
+        android:background="@color/green4main"
+        android:fontFamily="@font/asap_bold"
+        android:text="Save"
+        app:cornerRadius="23dp"
+        app:layout_constraintBottom_toTopOf="@+id/btnAdd"
+        app:layout_constraintEnd_toEndOf="parent" />
+
+    <Button
+        android:id="@+id/btnView"
+        android:layout_width="134dp"
+        android:layout_height="44dp"
+        android:layout_marginEnd="15dp"
+        android:layout_marginRight="15dp"
+        android:layout_marginBottom="12dp"
+        android:fontFamily="@font/asap_bold"
+        android:text="View >>"
+        app:cornerRadius = "23dp"
+        android:backgroundTint="@color/white"
+        android:textColor="@color/green4main"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent" />
+
+    <com.google.android.material.textfield.TextInputEditText
+        android:id="@+id/enterCount"
+        android:layout_width="111dp"
+        android:layout_height="36dp"
+        android:layout_marginStart="59dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginBottom="60dp"
+        android:layout_weight="1"
+        android:background="#FFFFFF"
+        android:hint="Count"
+        android:paddingLeft="5dp"
+        android:textSize="16sp"
+        app:layout_constraintBottom_toTopOf="@+id/enterGif"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView2" />
+
+    <com.google.android.material.textfield.TextInputEditText
+        android:id="@+id/enterGif"
+        android:layout_width="111dp"
+        android:layout_height="36dp"
+        android:layout_marginStart="59dp"
+        android:layout_marginBottom="45dp"
+        android:background="#FFFFFF"
+        android:hint="Upload GIF"
+        android:paddingLeft="5dp"
+        android:textSize="16sp"
+        app:layout_constraintBottom_toTopOf="@+id/enterExerciseDescription"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <Button
+        android:id="@+id/btnAdd"
+        android:layout_width="40dp"
+        android:layout_height="38dp"
+        android:layout_marginStart="58dp"
+        android:layout_marginBottom="65dp"
+        android:background="#000000"
+        android:text="+"
+        android:textColor="#FFFFFF"
+        app:cornerRadius="100dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/btndescription" />
+
+    <TextView
+        android:id="@+id/btndescription"
+        android:layout_width="152dp"
+        android:layout_height="18dp"
+        android:layout_marginStart="14dp"
+        android:layout_marginBottom="10dp"
+        android:fontFamily="@font/asap_bold"
+        android:text="Add Next Exercise"
+        android:textColor="@color/white"
+        android:textSize="16sp"
+        app:layout_constraintBottom_toTopOf="@+id/btnView"
+        app:layout_constraintStart_toEndOf="@+id/btnAdd" />
+
+    <TextView
+        android:id="@+id/textView24"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="59dp"
+        android:layout_marginTop="200dp"
+        android:fontFamily="@font/asap_bold"
+        android:text="Exercise Name"
+        android:textColor="@color/white"
+        android:textSize="16dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
