@@ -112,7 +112,7 @@
         android:paddingTop="1dp"
         android:selectAllOnFocus="false"
         android:singleLine="true"
-        android:text="Enter Exericse Name"
+        android:hint="Enter Exericse Name"
         android:textAllCaps="false"
         android:textColor="#80000000"
         android:textSize="16sp"
@@ -138,7 +138,7 @@
         android:paddingLeft="5dp"
         android:selectAllOnFocus="false"
         android:singleLine="true"
-        android:text="Enter Description"
+        android:hint="Enter Description"
         android:textColor="#80000000"
         android:textSize="16sp"
         app:layout_constraintBottom_toTopOf="@+id/btnSave"
@@ -157,12 +157,13 @@
 
     </com.google.android.material.textfield.TextInputLayout>
 
-    <com.google.android.material.textfield.TextInputEditText
+    <EditText
         android:id="@+id/enterDuration"
         android:layout_width="130dp"
         android:layout_height="36dp"
         android:layout_marginTop="32dp"
         android:layout_marginEnd="36dp"
+        android:inputType="text"
         android:background="#FFFFFF"
         android:hint="Duration"
         android:paddingLeft="5dp"
