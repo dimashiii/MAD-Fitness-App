@@ -1,16 +1,29 @@
 package com.example.fitnessapp;
 
-import android.os.Bundle;
-
 import androidx.appcompat.app.AppCompatActivity;
 
+import android.content.Intent;
+import android.os.Bundle;
+
+import com.example.fitnessapp.databinding.ActivityBmiCategoryBinding;
+
+
 public class HealthJournal extends AppCompatActivity {
+
+
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_health_journal);
+        ActivityBmiCategoryBinding = ActivityBmiCategoryBinding.inflate(getLayoutInflater());
+        setContentView(binding.getRoot());
 
+        binding.bmiBtn.setOnClickListener(v -> {
+            startActivity(new Intent(this, CalcBmi.class));
+        });
 
+        binding.healthprBtn.setOnClickListener(v -> {
+            startActivity(new Intent(this, HealthTipsActivity.class));
+        });
     }
 }
