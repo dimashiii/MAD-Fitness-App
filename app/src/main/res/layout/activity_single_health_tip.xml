@@ -39,7 +39,7 @@
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:layout_marginLeft="10dp"
-                    android:text="This is Demo Name"
+                    android:text="This is The Topic"
                     android:textColor="#000"
                     android:textSize="25sp"
                     android:textStyle="bold" />
@@ -49,7 +49,7 @@
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:layout_marginLeft="10dp"
-                    android:text="This is Course Name"
+                    android:text="This is the Description"
                     android:textColor="#000"
                     android:textSize="25sp" />
 
@@ -59,7 +59,7 @@
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:layout_marginLeft="10dp"
-                    android:text="This is Email Name"
+                    android:text="This is The Date"
                     android:textColor="#000"
                     android:textSize="25sp" />
             </androidx.appcompat.widget.LinearLayoutCompat>
@@ -75,13 +75,13 @@
                 android:id="@+id/editicon"
                 android:layout_width="193dp"
                 android:layout_height="40dp"
-                android:src="@drawable/edit" />
+                android:src="@drawable/ic_editbtn1" />
 
             <ImageView
                 android:layout_width="wrap_content"
                 android:layout_height="40dp"
                 android:id="@+id/deleteicon"
-                android:src="@drawable/delete"/>
+                android:src="@drawable/ic_baseline_delete_forever_24"/>
         </LinearLayout>
     </LinearLayout>
 

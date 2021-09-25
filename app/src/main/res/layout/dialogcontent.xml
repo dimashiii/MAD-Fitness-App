@@ -9,7 +9,7 @@
     <TextView
         android:layout_width="match_parent"
         android:layout_height="50dp"
-        android:text="Update Content Panel"
+        android:text="Update Health Tip"
         android:background="@color/colorPrimary"
         android:textSize="25sp"
         android:gravity="center"
@@ -26,7 +26,7 @@
     <EditText
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:hint="Name"
+        android:hint="Topic"
         android:id="@+id/uname"
         android:layout_marginTop="10dp"
         android:textSize="20sp"/>
@@ -34,7 +34,7 @@
     <EditText
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:hint="Course"
+        android:hint="Description"
         android:id="@+id/ucourse"
         android:layout_marginTop="10dp"
         android:textSize="20sp"/>
@@ -50,7 +50,7 @@
     <Button
         android:layout_width="300dp"
         android:layout_height="wrap_content"
-        android:text="Update"
+        android:text="Date"
         android:id="@+id/usubmit"
         android:background="@color/colorPrimary"
         android:textColor="#fff"
