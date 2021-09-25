@@ -33,15 +33,24 @@
         <entry key="..\:/Program_File/fito-main/fito-main/app/src/main/res/layout/custom_water_layout.xml" value="0.2" />
         <entry key="..\:/Program_File/fito-main/fito-main/app/src/main/res/layout/fasting_layout.xml" value="0.18645833333333334" />
         <entry key="..\:/Program_File/fito-main/fito-main/app/src/main/res/layout/water_consumption_layout.xml" value="0.18645833333333334" />
+        <entry key="app/src/main/res/drawable/greeting_bg.xml" value="0.13518518518518519" />
+        <entry key="app/src/main/res/drawable/ic_baseline_calendar_today_24.xml" value="0.13518518518518519" />
         <entry key="app/src/main/res/drawable/ic_baseline_delete_forever_24.xml" value="0.12314814814814815" />
+        <entry key="app/src/main/res/drawable/ic_baseline_emoji_emotions_24.xml" value="0.13518518518518519" />
         <entry key="app/src/main/res/drawable/ic_baseline_search_24.xml" value="0.12314814814814815" />
         <entry key="app/src/main/res/drawable/ic_editbtn1.xml" value="0.12314814814814815" />
         <entry key="app/src/main/res/drawable/progress_bg.xml" value="0.12314814814814815" />
+        <entry key="app/src/main/res/font/asap.xml" value="0.13518518518518519" />
+        <entry key="app/src/main/res/layout/activity_bmi_category.xml" value="0.1" />
         <entry key="app/src/main/res/layout/activity_calc_bmi.xml" value="0.165" />
         <entry key="app/src/main/res/layout/activity_dailygoals.xml" value="0.1" />
+        <entry key="app/src/main/res/layout/activity_display_bmi.xml" value="0.4876043880098761" />
         <entry key="app/src/main/res/layout/activity_fastingform.xml" value="0.17657657657657658" />
         <entry key="app/src/main/res/layout/activity_health_journal.xml" value="0.17657657657657658" />
         <entry key="app/src/main/res/layout/activity_main.xml" value="0.1" />
+        <entry key="app/src/main/res/layout/activity_personal_data.xml" value="0.1" />
+        <entry key="app/src/main/res/layout/activity_personal_details.xml" value="0.1" />
+        <entry key="app/src/main/res/layout/activity_progress.xml" value="0.1" />
         <entry key="app/src/main/res/layout/water_consumption_layout.xml" value="0.17657657657657658" />
         <entry key="app/src/main/res/menu/searchmenu.xml" value="0.4951832081548345" />
       </map>
