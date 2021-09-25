@@ -16,11 +16,14 @@
     <color name="blue1">#6CA4F7</color>
     <color name="blue2">#E2EEFF</color>
     <color name="blue4main">#7EB7FE</color>
+    <color name="blue5">#5CA3FF</color>
 
     <color name="grey3">#2F3448</color>
     <color name="grey4dark">#171A23</color>
 
     <color name="colorPrimary">#009688</color>
+
+    <color name="d_red1">#E14041</color>
 
 
 </resources>

@@ -1,5 +1,5 @@
 <resources>
-    <string name="app_name">Fitzzy</string>
+    <string name="app_name">Fito</string>
     <string name="txtfastingsub">Money is not everything</string>
     <string name="txtfastingimg">Fasting Img</string>
     <string name="btnget">Get Started</string>
@@ -70,4 +70,51 @@
     <string name="times"> Times</string>
     <string name="consumption">Consumption</string>
     <string name="ml">ml</string>
+
+
+
+    <!-- Dimashi's Strings -->
+    <string name="topic_height">Let\'s Calculate Your BMI</string>
+    <string name="bmi_weight">Weight</string>
+    <string name="topic_healthjournal">Health Journal</string>
+    <string name="progress_cardname">Progress</string>
+    <string name="date1">20/11/2020</string>
+    <string name="d_my_weight1">Weight</string>
+    <string name="d_dltHistoryBtn">Delete History</string>
+    <string name="d_my_bmi1">BMI</string>
+    <string name="topic_personaldata">Personal Data</string>
+    <string name="d_currentweight">Current Weight</string>
+    <string name="d_desiredweight">Desired Weight</string>
+    <string name="bmiTime1">10.00 am</string>
+    <string name="wheight_value1">108 kg</string>
+    <string name="bmivalue1">37.3</string>
+    <string name="date2">08/01/2021</string>
+    <string name="bmiTime2">04.24 pm</string>
+    <string name="wheight_value2">79 kg</string>
+    <string name="bmivalue2">28.63</string>
+    <string name="currentheight">Height</string>
+    <string name="kgtext">kg</string>
+    <string name="cmtext">cm</string>
+    <string name="savebtn_d1">SAVE</string>
+    <string name="calmethod1btn">cm/kg</string>
+    <string name="calmethod2btn">ft/lb</string>
+    <string name="greeting1">Good Evening</string>
+    <string name="greetingname1">Amali</string>
+    <string name="newweightbtn1">Record new weight</string>
+    <string name="topicdetails">Personal Details</string>
+    <string name="calculatebtn">CALCULATE</string>
+    <string name="resetbtn">RESET</string>
+    <string name="date">Date</string>
+    <string name="desiredHeight">Height</string>
+    <string name="desiredBMI">BMI</string>
+    <string name="agerange">Age Range</string>
+    <string name="enterageRange">Age Range</string>
+    <string name="bmirange">BMI Range</string>
+    <string name="enterbmirange">BMI Range</string>
+    <string name="bmicategory">BMI Category</string>
+    <string name="enterbmicategory">BMI Category</string>
+    <string name="description">Description</string>
+    <string name="rbtnFemale">Female</string>
+    <string name="rbtnmale">Male</string>
+    <!-- Dimashi's Strings -->
 </resources>
