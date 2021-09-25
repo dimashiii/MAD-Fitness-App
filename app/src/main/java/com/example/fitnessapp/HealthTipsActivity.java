@@ -31,14 +31,14 @@ public class HealthTipsActivity extends AppCompatActivity
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
-        setTitle("Search here..");
+        setTitle("Fito | Search Topic ...");
 
         recview=(RecyclerView)findViewById(R.id.recview);
         recview.setLayoutManager(new LinearLayoutManager(this));
 
         FirebaseRecyclerOptions<ModelHealthTips> options =
                 new FirebaseRecyclerOptions.Builder<ModelHealthTips>()
-                        .setQuery(FirebaseDatabase.getInstance().getReference().child("students"), ModelHealthTips.class)
+                        .setQuery(FirebaseDatabase.getInstance().getReference().child("healthTips"), ModelHealthTips.class)
                         .build();
 
         adapter=new AdapterHealthTips(options);
@@ -99,7 +99,7 @@ public class HealthTipsActivity extends AppCompatActivity
     {
         FirebaseRecyclerOptions<ModelHealthTips> options =
                 new FirebaseRecyclerOptions.Builder<ModelHealthTips>()
-                        .setQuery(FirebaseDatabase.getInstance().getReference().child("students").orderByChild("course").startAt(s).endAt(s+"\uf8ff"), ModelHealthTips.class)
+                        .setQuery(FirebaseDatabase.getInstance().getReference().child("healthTips").orderByChild("htopic").startAt(s).endAt(s+"\uf8ff"), ModelHealthTips.class)
                         .build();
 
         adapter=new AdapterHealthTips(options);

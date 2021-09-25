@@ -2,40 +2,40 @@ package com.example.fitnessapp;
 
 public class ModelHealthTips
 {
-    String name,course,email,purl;
+    String htopic,hdesc,hdate,purl;
     ModelHealthTips()
     {
 
     }
-    public ModelHealthTips(String name, String course, String email, String purl) {
-        this.name = name;
-        this.course = course;
-        this.email = email;
+    public ModelHealthTips(String htopic, String hdesc, String hdate, String purl) {
+        this.htopic = htopic;
+        this.hdesc = hdesc;
+        this.hdate = hdate;
         this.purl = purl;
     }
 
-    public String getName() {
-        return name;
+    public String getHtopic() {
+        return htopic;
     }
 
-    public void setName(String name) {
-        this.name = name;
+    public void setHtopic(String htopic) {
+        this.htopic = htopic;
     }
 
-    public String getCourse() {
-        return course;
+    public String getHdesc() {
+        return hdesc;
     }
 
-    public void setCourse(String course) {
-        this.course = course;
+    public void setHdesc(String hdesc) {
+        this.hdesc = hdesc;
     }
 
-    public String getEmail() {
-        return email;
+    public String getHdate() {
+        return hdate;
     }
 
-    public void setEmail(String email) {
-        this.email = email;
+    public void setHdate(String hdate) {
+        this.hdate = hdate;
     }
 
     public String getPurl() {

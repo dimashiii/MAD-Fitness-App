@@ -49,9 +49,9 @@ public class AdapterHealthTips extends FirebaseRecyclerAdapter<ModelHealthTips,A
     @Override
     protected void onBindViewHolder(@NonNull final tips_viewholder holder, final int position, @NonNull final ModelHealthTips ModelHealthTips)
     {
-        holder.name.setText(ModelHealthTips.getName());
-        holder.course.setText(ModelHealthTips.getCourse());
-        holder.email.setText(ModelHealthTips.getEmail());
+        holder.htopic.setText(ModelHealthTips.getHtopic());
+        holder.hdesc.setText(ModelHealthTips.getHdesc());
+        holder.hdate.setText(ModelHealthTips.getHdate());
         Glide.with(holder.img.getContext()).load(ModelHealthTips.getPurl()).into(holder.img);
 
         holder.edit.setOnClickListener(new View.OnClickListener() {
@@ -64,15 +64,15 @@ public class AdapterHealthTips extends FirebaseRecyclerAdapter<ModelHealthTips,A
 
                 View myview=dialogPlus.getHolderView();
                 final EditText purl=myview.findViewById(R.id.uimgurl);
-                final EditText name=myview.findViewById(R.id.uname);
-                final EditText course=myview.findViewById(R.id.ucourse);
-                final EditText email=myview.findViewById(R.id.uemail);
+                final EditText htopic=myview.findViewById(R.id.uhtopic);
+                final EditText hdesc=myview.findViewById(R.id.uhdesc);
+                final EditText hdate=myview.findViewById(R.id.uhdate);
                 Button submit=myview.findViewById(R.id.usubmit);
 
                 purl.setText(ModelHealthTips.getPurl());
-                name.setText(ModelHealthTips.getName());
-                course.setText(ModelHealthTips.getCourse());
-                email.setText(ModelHealthTips.getEmail());
+                htopic.setText(ModelHealthTips.getHtopic());
+                hdesc.setText(ModelHealthTips.getHdesc());
+                hdate.setText(ModelHealthTips.getHdate());
 
                 dialogPlus.show();
 
@@ -81,11 +81,11 @@ public class AdapterHealthTips extends FirebaseRecyclerAdapter<ModelHealthTips,A
                     public void onClick(View view) {
                         Map<String,Object> map=new HashMap<>();
                         map.put("purl",purl.getText().toString());
-                        map.put("name",name.getText().toString());
-                        map.put("email",email.getText().toString());
-                        map.put("course",course.getText().toString());
+                        map.put("htopic",htopic.getText().toString());
+                        map.put("hdesc",hdesc.getText().toString());
+                        map.put("hdate",hdate.getText().toString());
 
-                        FirebaseDatabase.getInstance().getReference().child("students")
+                        FirebaseDatabase.getInstance().getReference().child("healthTips")
                                 .child(getRef(position).getKey()).updateChildren(map)
                                 .addOnSuccessListener(new OnSuccessListener<Void>() {
                                     @Override
@@ -111,13 +111,13 @@ public class AdapterHealthTips extends FirebaseRecyclerAdapter<ModelHealthTips,A
             @Override
             public void onClick(View view) {
                 AlertDialog.Builder builder=new AlertDialog.Builder(holder.img.getContext());
-                builder.setTitle("Delete Panel");
-                builder.setMessage("Delete...?");
+                builder.setTitle("Delete Health Tip");
+                builder.setMessage("Delete?");
 
                 builder.setPositiveButton("Yes", new DialogInterface.OnClickListener() {
                     @Override
                     public void onClick(DialogInterface dialogInterface, int i) {
-                        FirebaseDatabase.getInstance().getReference().child("students")
+                        FirebaseDatabase.getInstance().getReference().child("healthTips")
                                 .child(getRef(position).getKey()).removeValue();
                     }
                 });
@@ -148,14 +148,14 @@ public class AdapterHealthTips extends FirebaseRecyclerAdapter<ModelHealthTips,A
     {
         CircleImageView img;
         ImageView edit,delete;
-        TextView name,course,email;
+        TextView htopic,hdesc,hdate;
         public tips_viewholder(@NonNull View itemView)
         {
             super(itemView);
             img=(CircleImageView) itemView.findViewById(R.id.img1);
-            name=(TextView)itemView.findViewById(R.id.nametext);
-            course=(TextView)itemView.findViewById(R.id.coursetext);
-            email=(TextView)itemView.findViewById(R.id.emailtext);
+            htopic=(TextView)itemView.findViewById(R.id.htopictext);
+            hdesc=(TextView)itemView.findViewById(R.id.hdesctext);
+            hdate=(TextView)itemView.findViewById(R.id.hdatetext);
 
             edit=(ImageView)itemView.findViewById(R.id.editicon);
             delete=(ImageView)itemView.findViewById(R.id.deleteicon);

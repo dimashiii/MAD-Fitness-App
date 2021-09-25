@@ -6,13 +6,14 @@
     android:layout_height="match_parent"
     android:orientation="vertical"
     android:gravity="center"
+    android:background="@drawable/sportgirl"
     tools:context=".AddHealthTipsActivity">
 
 
     <EditText
         android:layout_width="300dp"
         android:layout_height="wrap_content"
-        android:id="@+id/add_name"
+        android:id="@+id/add_htopic"
         android:textSize="20sp"
         android:hint="Topic"
         android:layout_marginBottom="15dp"
@@ -21,7 +22,7 @@
     <EditText
         android:layout_width="300dp"
         android:layout_height="wrap_content"
-        android:id="@+id/add_course"
+        android:id="@+id/add_hdesc"
         android:textSize="20sp"
         android:hint="Discription"
         android:layout_marginBottom="15dp"
@@ -30,7 +31,7 @@
     <EditText
         android:layout_width="300dp"
         android:layout_height="wrap_content"
-        android:id="@+id/add_email"
+        android:id="@+id/add_hdate"
         android:textSize="20sp"
         android:hint="Date"
         android:layout_marginBottom="15dp"
