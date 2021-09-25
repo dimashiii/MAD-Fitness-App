@@ -6,7 +6,8 @@
     android:layout_height="match_parent"
     android:orientation="vertical"
     android:gravity="center"
-    tools:context=".adddata">
+    android:background="@drawable/tips_bg"
+    tools:context=".AddHealthTipsActivity">
 
 
     <EditText
@@ -14,7 +15,7 @@
         android:layout_height="wrap_content"
         android:id="@+id/add_name"
         android:textSize="20sp"
-        android:hint="Your Name"
+        android:hint="Topic"
         android:layout_marginBottom="15dp"
         android:textColor="#000"/>
 
@@ -23,7 +24,7 @@
         android:layout_height="wrap_content"
         android:id="@+id/add_course"
         android:textSize="20sp"
-        android:hint="Your Course"
+        android:hint="Discription"
         android:layout_marginBottom="15dp"
         android:textColor="#000"/>
 
@@ -32,7 +33,7 @@
         android:layout_height="wrap_content"
         android:id="@+id/add_email"
         android:textSize="20sp"
-        android:hint="Your Email"
+        android:hint="Date"
         android:layout_marginBottom="15dp"
         android:textColor="#000"/>
 
@@ -42,7 +43,7 @@
         android:layout_height="wrap_content"
         android:id="@+id/add_purl"
         android:textSize="20sp"
-        android:hint="Profile Image URL"
+        android:hint="Image URL"
         android:layout_marginBottom="15dp"
         android:textColor="#000"/>
 
@@ -52,7 +53,7 @@
         android:layout_marginBottom="15dp"
         android:id="@+id/add_submit"
         android:textSize="20sp"
-        android:text="Add to Firebase"/>
+        android:text="Add Your Tip"/>
 
     <Button
         android:layout_width="wrap_content"

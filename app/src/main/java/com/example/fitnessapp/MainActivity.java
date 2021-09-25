@@ -26,14 +26,14 @@ public class MainActivity extends AppCompatActivity
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
-        setTitle("Search here..");
+        setTitle("Search Topic..");
 
         recview=(RecyclerView)findViewById(R.id.recview);
         recview.setLayoutManager(new LinearLayoutManager(this));
 
         FirebaseRecyclerOptions<model> options =
                 new FirebaseRecyclerOptions.Builder<model>()
-                        .setQuery(FirebaseDatabase.getInstance().getReference().child("students"), model.class)
+                        .setQuery(FirebaseDatabase.getInstance().getReference().child("healthPro"), model.class)
                         .build();
 
         adapter=new com.example.fitnessapp.myadapter(options);

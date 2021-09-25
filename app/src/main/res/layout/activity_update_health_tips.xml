@@ -9,7 +9,7 @@
     <TextView
         android:layout_width="match_parent"
         android:layout_height="50dp"
-        android:text="Update Content Panel"
+        android:text="Update Health Tips"
         android:background="@color/colorPrimary"
         android:textSize="25sp"
         android:gravity="center"
