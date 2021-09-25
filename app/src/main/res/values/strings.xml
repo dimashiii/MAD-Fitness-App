@@ -1,5 +1,5 @@
 <resources>
-    <string name="app_name">FitnessApp</string>
+    <string name="app_name">Fitzzy</string>
     <string name="txtfastingsub">Money is not everything</string>
     <string name="txtfastingimg">Fasting Img</string>
     <string name="btnget">Get Started</string>
