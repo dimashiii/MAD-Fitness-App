@@ -7,15 +7,20 @@ import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
 import android.widget.EditText;
+import android.widget.Toast;
 
 import com.example.fitnessapp.model.WorkoutPlanModel;
 import com.google.firebase.database.DatabaseReference;
+import com.google.firebase.database.FirebaseDatabase;
+
+import java.util.HashMap;
 
 public class CreateWorkoutPlan extends AppCompatActivity {
 
     EditText enterPlan;
     EditText enterPlanDuration;
     Button btnContinue;
+    Button btnSavePlan;
 
     DatabaseReference dbRef;
     WorkoutPlanModel plan;
@@ -26,40 +31,44 @@ public class CreateWorkoutPlan extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_create_workout_plan);
 
-        enterPlan = findViewById(R.id.enterPlan);
-        enterPlanDuration = findViewById(R.id.enterPlanDuration);
-        btnContinue = findViewById(R.id.btnContinue);
+        enterPlan = (EditText) findViewById(R.id.enterPlan);
+        enterPlanDuration = (EditText) findViewById(R.id.enterPlanDuration);
+        btnContinue = (Button) findViewById(R.id.btnContinue);
+        btnSavePlan = (Button) findViewById(R.id.btnSavePlan);
 
-        plan = new WorkoutPlanModel();
 
-        /* btnContinue.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-               Workout();
+        btnSavePlan.setOnClickListener(view -> {
+            HashMap<String, Object> map = new HashMap<>();
+            map.put("planName", enterPlan.getText().toString());
+            map.put("planDuration", enterPlanDuration.getText().toString());
+            FirebaseDatabase.getInstance().getReference().child("WorkoutPlanModel").push()
+                    .setValue(map).addOnSuccessListener(success -> {
+                enterPlan.setText("");
+                enterPlanDuration.setText("");
+                Toast.makeText(this, "Details Inserted Successfully!", Toast.LENGTH_SHORT).show();
+            }).addOnFailureListener(fail -> {
+                Toast.makeText(this, "Details Not Inserted !!", Toast.LENGTH_SHORT).show();
+                ;
+            });
 
-            }
-        });*/
+        });
 
-    }
+        btnContinue.setOnClickListener(view -> {
+            Intent intent = new Intent(this, Workout.class);
 
-    //Navigation part-->workout
-    public void onClick(View view) {
-        Intent intent1 = new Intent(this,Workout.class);
-        Intent intent2 = new Intent(this,PlanWorkout.class);
 
-        String planName = enterPlan.getText().toString();
-        String planDuration = enterPlanDuration.getText().toString();
+            String planName = enterPlan.getText().toString();
+            String planDuration = enterPlanDuration.getText().toString();
 
-       // intent.putExtra("PLAN_NAME",planName);
-        //intent.putExtra("PLAN_DURATION",planDuration);
-        Bundle extras = new Bundle();
-        extras.putString("PLAN_NAME",planName);
-        extras.putString("PLAN_DURATION",planDuration);
+            intent.putExtra("planName",planName);
+            intent.putExtra("planDuration",planDuration);
 
-        intent1.putExtras(extras);
-        intent2.putExtras(extras);
 
-        startActivity(intent1);
+            startActivity(intent);
+        });
+
+
+
 
     }
 }
