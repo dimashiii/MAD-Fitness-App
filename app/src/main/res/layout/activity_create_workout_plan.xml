@@ -63,9 +63,8 @@
         android:layout_marginBottom="163dp"
         android:background="@color/white"
         android:ems="10"
-        android:inputType="numberSigned"
         android:paddingLeft="8dp"
-        android:text="Enter Duration"
+        android:hint="Enter Duration"
         android:textColor="#746E6C6C"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
@@ -79,11 +78,10 @@
         android:layout_height="51dp"
         android:layout_marginTop="244dp"
         android:layout_marginEnd="16dp"
-        android:textColor="@color/green4main"
         android:backgroundTint="@color/white"
         android:fontFamily="@font/asap_bold"
         android:text="Continue >>"
-        android:onClick="onClick"
+        android:textColor="@color/green4main"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/enterPlan" />
 
@@ -98,10 +96,9 @@
         android:background="@color/white"
         android:backgroundTint="@color/white"
         android:ems="10"
-        android:fontFamily="@font/asap_bold"
         android:inputType="textPersonName"
         android:paddingLeft="8dp"
-        android:text="Enter Plan Name"
+        android:hint="Enter Plan Name"
         android:textColor="#746E6C6C"
         app:layout_constraintBottom_toTopOf="@+id/planDuration"
 
@@ -109,5 +106,20 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/planName"
         tools:ignore="UnknownId" />
+
+    <Button
+        android:id="@+id/btnSavePlan"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="150dp"
+        android:layout_marginTop="21dp"
+        android:layout_marginEnd="150dp"
+        android:text="Save Plan"
+        android:textColor="@color/black"
+        app:backgroundTint="@color/blue2"
+        app:iconTint="@color/black"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/enterPlanDuration" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
