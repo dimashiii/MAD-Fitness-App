@@ -26,4 +26,5 @@ public class TimerModel {
     public void setFastingTime(String fastingTime) {
         this.fastingTime = fastingTime;
     }
+
 }

@@ -27,7 +27,7 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:hint="Name"
-        android:id="@+id/uname"
+        android:id="@+id/uhtopic"
         android:layout_marginTop="10dp"
         android:textSize="20sp"/>
 
@@ -35,7 +35,7 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:hint="Course"
-        android:id="@+id/ucourse"
+        android:id="@+id/uhdesc"
         android:layout_marginTop="10dp"
         android:textSize="20sp"/>
 
@@ -43,7 +43,7 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:hint="Email"
-        android:id="@+id/uemail"
+        android:id="@+id/uhdate"
         android:layout_marginTop="10dp"
         android:textSize="20sp"/>
 

@@ -17,6 +17,7 @@
         android:layout_marginBottom="52dp">
 
         <androidx.cardview.widget.CardView
+            android:id="@+id/healthprBtn"
             android:layout_width="324dp"
             android:layout_height="241dp"
             android:layout_margin="20dp"
@@ -58,6 +59,7 @@
         </androidx.cardview.widget.CardView>
 
         <androidx.cardview.widget.CardView
+            android:id="@+id/bmiBtn"
             android:layout_width="320dp"
             android:layout_height="240dp"
             android:layout_margin="20dp"

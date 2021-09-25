@@ -19,7 +19,7 @@ import java.util.Map;
 
 public class AddHealthTipsActivity extends AppCompatActivity
 {
-    EditText name,course,email,purl;
+    EditText htopic,hdesc,hdate,purl;
     Button submit,back;
 
     @Override
@@ -28,16 +28,16 @@ public class AddHealthTipsActivity extends AppCompatActivity
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_add_health_tips);
 
-        name=(EditText)findViewById(R.id.add_name);
-        email=(EditText)findViewById(R.id.add_email);
-        course=(EditText)findViewById(R.id.add_course);
+        htopic=(EditText)findViewById(R.id.add_htopic);
+        hdesc=(EditText)findViewById(R.id.add_hdesc);
+        hdate=(EditText)findViewById(R.id.add_hdate);
         purl=(EditText)findViewById(R.id.add_purl);
 
         back=(Button)findViewById(R.id.add_back);
         back.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                startActivity(new Intent(getApplicationContext(),MainActivity.class));
+                startActivity(new Intent(getApplicationContext(),HealthTipsActivity.class));
                 finish();
             }
         });
@@ -54,18 +54,18 @@ public class AddHealthTipsActivity extends AppCompatActivity
     private void processinsert()
     {
         Map<String,Object> map=new HashMap<>();
-        map.put("name",name.getText().toString());
-        map.put("course",course.getText().toString());
-        map.put("email",email.getText().toString());
+        map.put("htopic",htopic.getText().toString());
+        map.put("hdesc",hdesc.getText().toString());
+        map.put("hdate",hdate.getText().toString());
         map.put("purl",purl.getText().toString());
-        FirebaseDatabase.getInstance().getReference().child("students").push()
+        FirebaseDatabase.getInstance().getReference().child("healthTopics").push()
                 .setValue(map)
                 .addOnSuccessListener(new OnSuccessListener<Void>() {
                     @Override
                     public void onSuccess(Void aVoid) {
-                        name.setText("");
-                        course.setText("");
-                        email.setText("");
+                        htopic.setText("");
+                        hdesc.setText("");
+                        hdate.setText("");
                         purl.setText("");
                         Toast.makeText(getApplicationContext(),"Inserted Successfully",Toast.LENGTH_LONG).show();
                     }
