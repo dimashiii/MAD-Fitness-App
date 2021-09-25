@@ -78,6 +78,11 @@ public class Workout extends AppCompatActivity {
             }
         });
 
+        btnedit.setOnClickListener(view->{
+            Intent intentEdit = new Intent(this, DialogPlanWokout.class);
+            startActivity(intentEdit);
+        });
+
         btndelete.setOnClickListener(view -> {
             FirebaseDatabase.getInstance().getReference("WorkoutPlanModel").removeValue().addOnSuccessListener(success -> {
                 txtPlanName.setText(" ");

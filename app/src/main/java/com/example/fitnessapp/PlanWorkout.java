@@ -58,6 +58,7 @@ public class PlanWorkout extends AppCompatActivity {
         deletebtn = findViewById(R.id.deletebtn);
         viewmorebtn = findViewById(R.id.viewMore);
 
+        //view
         final DatabaseReference nm = FirebaseDatabase.getInstance().getReference("ExercisesModel");
         nm.addValueEventListener(new ValueEventListener() {
             @Override
@@ -87,7 +88,16 @@ public class PlanWorkout extends AppCompatActivity {
         });
 
 
+
+
         ExerciseAdapter exerciseAdapter = new ExerciseAdapter();
+
+        editbtn.setOnClickListener(view->{
+            Intent intentEdit = new Intent(this, DialogEditExercise.class);
+            startActivity(intentEdit);
+        });
+
+
         deletebtn.setOnClickListener(view -> {
             ExercisesModel exercisesModel = new ExercisesModel();
             exerciseAdapter.remove("exerciseName").addOnSuccessListener(success -> {
