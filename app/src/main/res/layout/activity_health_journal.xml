@@ -1,0 +1,115 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/progress_bg"
+    tools:context=".HealthJournal">
+
+    <androidx.gridlayout.widget.GridLayout
+        android:layout_width="wrap_content"
+        android:layout_height="527dp"
+        android:layout_alignParentBottom="true"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="100dp"
+        android:layout_marginEnd="20dp"
+        android:layout_marginBottom="52dp">
+
+        <androidx.cardview.widget.CardView
+            android:layout_width="324dp"
+            android:layout_height="241dp"
+            android:layout_margin="20dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginBottom="70dp"
+            app:cardCornerRadius="8dp"
+            app:cardElevation="8dp"
+            app:cardUseCompatPadding="true"
+            app:layout_column="0"
+            app:layout_gravity="fill"
+            app:layout_row="1">
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal|center_vertical"
+                android:orientation="vertical">
+
+                <ImageView
+                    android:layout_width="180dp"
+                    android:layout_height="122dp"
+                    android:layout_gravity="center"
+                    app:layout_gravity="center"
+                    app:srcCompat="@mipmap/bprogressnman"
+                    tools:ignore="VectorDrawableCompat" />
+
+                <TextView
+                    android:layout_width="206dp"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/asap_bold"
+                    android:gravity="center"
+                    android:text="Health Tips"
+                    android:textColor="@color/blue4main"
+                    android:textSize="36sp"
+                    app:layout_gravity="center_horizontal|center_vertical" />
+
+            </LinearLayout>
+
+        </androidx.cardview.widget.CardView>
+
+        <androidx.cardview.widget.CardView
+            android:layout_width="320dp"
+            android:layout_height="240dp"
+            android:layout_margin="20dp"
+            android:layout_marginTop="10dp"
+            app:cardCornerRadius="8dp"
+            app:cardElevation="8dp"
+            app:cardUseCompatPadding="true"
+            app:layout_column="0"
+            app:layout_gravity="fill"
+            app:layout_row="0">
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal|center_vertical"
+                android:orientation="vertical">
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="173dp"
+                    android:layout_gravity="center"
+                    app:layout_gravity="center"
+                    app:srcCompat="@mipmap/bmi_cal1"
+                    tools:ignore="VectorDrawableCompat" />
+                <!--
+                <TextView
+                    android:id="@+id/bmi_cardname"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/asap_bold"
+                    android:gravity="center"
+                    android:text="@string/bmi_cardname"
+                    android:textSize="24sp"
+                    app:layout_gravity="center_horizontal|center_vertical" />-->
+
+            </LinearLayout>
+
+        </androidx.cardview.widget.CardView>
+
+
+    </androidx.gridlayout.widget.GridLayout>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginEnd="12dp"
+        android:layout_marginBottom="12dp"
+        android:fontFamily="@font/quicksand_bold"
+        android:text="Health Journal"
+        android:textColor="@color/green2"
+        android:textSize="34sp" />
+
+</RelativeLayout>

@@ -18,5 +18,9 @@
     <color name="blue4main">#7EB7FE</color>
 
     <color name="grey3">#2F3448</color>
+    <color name="grey4dark">#171A23</color>
+
+    <color name="colorPrimary">#009688</color>
+
 
 </resources>
