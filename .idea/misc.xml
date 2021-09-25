@@ -41,16 +41,27 @@
         <entry key="app/src/main/res/drawable/ic_editbtn1.xml" value="0.12314814814814815" />
         <entry key="app/src/main/res/drawable/progress_bg.xml" value="0.12314814814814815" />
         <entry key="app/src/main/res/font/asap.xml" value="0.13518518518518519" />
+        <entry key="app/src/main/res/layout/activity_add_exercise.xml" value="0.19144144144144143" />
+        <entry key="app/src/main/res/layout/activity_add_health_tips.xml" value="0.17927927927927928" />
+        <entry key="app/src/main/res/layout/activity_adddata.xml" value="0.18888888888888888" />
         <entry key="app/src/main/res/layout/activity_bmi_category.xml" value="0.1" />
         <entry key="app/src/main/res/layout/activity_calc_bmi.xml" value="0.165" />
+        <entry key="app/src/main/res/layout/activity_card_selector.xml" value="0.19144144144144143" />
+        <entry key="app/src/main/res/layout/activity_create_workout_plan.xml" value="0.19144144144144143" />
         <entry key="app/src/main/res/layout/activity_dailygoals.xml" value="0.1" />
-        <entry key="app/src/main/res/layout/activity_display_bmi.xml" value="0.4876043880098761" />
+        <entry key="app/src/main/res/layout/activity_display_bmi.xml" value="0.10237124638399046" />
         <entry key="app/src/main/res/layout/activity_fastingform.xml" value="0.17657657657657658" />
+        <entry key="app/src/main/res/layout/activity_fastingplans.xml" value="0.16846846846846847" />
         <entry key="app/src/main/res/layout/activity_health_journal.xml" value="0.17657657657657658" />
+        <entry key="app/src/main/res/layout/activity_health_tips.xml" value="0.17927927927927928" />
         <entry key="app/src/main/res/layout/activity_main.xml" value="0.1" />
         <entry key="app/src/main/res/layout/activity_personal_data.xml" value="0.1" />
         <entry key="app/src/main/res/layout/activity_personal_details.xml" value="0.1" />
         <entry key="app/src/main/res/layout/activity_progress.xml" value="0.1" />
+        <entry key="app/src/main/res/layout/activity_single_health_tip.xml" value="0.17927927927927928" />
+        <entry key="app/src/main/res/layout/activity_update_health_tips.xml" value="0.19144144144144143" />
+        <entry key="app/src/main/res/layout/dialogcontent.xml" value="0.1361111111111111" />
+        <entry key="app/src/main/res/layout/singlerow.xml" value="0.1" />
         <entry key="app/src/main/res/layout/water_consumption_layout.xml" value="0.17657657657657658" />
         <entry key="app/src/main/res/menu/searchmenu.xml" value="0.4951832081548345" />
       </map>
