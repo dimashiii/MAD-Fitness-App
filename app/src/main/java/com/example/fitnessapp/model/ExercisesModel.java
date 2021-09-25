@@ -1,5 +1,7 @@
 package com.example.fitnessapp.model;
 
+import android.widget.ImageView;
+
 public class ExercisesModel {
 
     String exerciseName,exerciseDescription,gif,duration;
@@ -15,6 +17,8 @@ public class ExercisesModel {
         this.count = count;
         this.exerciseDescription = exerciseDescription;
     }
+
+
 
     public String getExerciseName() {
         return exerciseName;
