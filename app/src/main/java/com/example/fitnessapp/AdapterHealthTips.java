@@ -1,14 +1,19 @@
 package com.example.fitnessapp;
 
 import android.app.AlertDialog;
+import android.app.Dialog;
+import android.content.Context;
 import android.content.DialogInterface;
+import android.view.Gravity;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.Button;
 import android.widget.EditText;
 import android.widget.ImageView;
+import android.widget.LinearLayout;
 import android.widget.TextView;
+import android.widget.Toast;
 
 import androidx.annotation.NonNull;
 import androidx.recyclerview.widget.RecyclerView;
@@ -17,14 +22,19 @@ import com.bumptech.glide.Glide;
 import com.example.fitnessapp.model.ModelHealthTips;
 import com.firebase.ui.database.FirebaseRecyclerAdapter;
 import com.firebase.ui.database.FirebaseRecyclerOptions;
+import com.google.android.gms.tasks.OnCompleteListener;
 import com.google.android.gms.tasks.OnFailureListener;
 import com.google.android.gms.tasks.OnSuccessListener;
+import com.google.android.gms.tasks.Task;
 import com.google.firebase.database.FirebaseDatabase;
 import com.orhanobut.dialogplus.DialogPlus;
+import com.orhanobut.dialogplus.DialogPlusBuilder;
 import com.orhanobut.dialogplus.ViewHolder;
 
 import java.util.HashMap;
 import java.util.Map;
+import java.util.concurrent.ExecutionException;
+import java.util.logging.Handler;
 
 import de.hdodenhof.circleimageview.CircleImageView;
 
@@ -48,7 +58,7 @@ public class AdapterHealthTips extends FirebaseRecyclerAdapter<ModelHealthTips,A
             @Override
             public void onClick(View view) {
                 final DialogPlus dialogPlus=DialogPlus.newDialog(holder.img.getContext())
-                        .setContentHolder(new ViewHolder(R.layout.activity_update_health_tips))
+                        .setContentHolder(new ViewHolder(R.layout.dialogcontent))
                         .setExpanded(true,1100)
                         .create();
 
@@ -71,9 +81,9 @@ public class AdapterHealthTips extends FirebaseRecyclerAdapter<ModelHealthTips,A
                     public void onClick(View view) {
                         Map<String,Object> map=new HashMap<>();
                         map.put("purl",purl.getText().toString());
-                        map.put("topic",htopic.getText().toString());
-                        map.put("desc",hdesc.getText().toString());
-                        map.put("date",hdate.getText().toString());
+                        map.put("htopic",htopic.getText().toString());
+                        map.put("hdesc",hdesc.getText().toString());
+                        map.put("hdesc",hdesc.getText().toString());
 
                         FirebaseDatabase.getInstance().getReference().child("healthTips")
                                 .child(getRef(position).getKey()).updateChildren(map)
@@ -101,7 +111,7 @@ public class AdapterHealthTips extends FirebaseRecyclerAdapter<ModelHealthTips,A
             @Override
             public void onClick(View view) {
                 AlertDialog.Builder builder=new AlertDialog.Builder(holder.img.getContext());
-                builder.setTitle("Delete Health Tip");
+                builder.setTitle("Delete Tips");
                 builder.setMessage("Delete?");
 
                 builder.setPositiveButton("Yes", new DialogInterface.OnClickListener() {
@@ -151,5 +161,4 @@ public class AdapterHealthTips extends FirebaseRecyclerAdapter<ModelHealthTips,A
             delete=(ImageView)itemView.findViewById(R.id.deleteicon);
         }
     }
-
 }
