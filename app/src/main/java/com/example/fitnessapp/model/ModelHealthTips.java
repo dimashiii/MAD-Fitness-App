@@ -1,12 +1,12 @@
-package com.example.fitnessapp;
+package com.example.fitnessapp.model;
 
-public class ModelHealthTips
-{
-    String htopic,hdesc,hdate,purl;
-    ModelHealthTips()
-    {
+public class ModelHealthTips {
+    String htopic, hdesc, hdate, purl;
+
+    ModelHealthTips() {
 
     }
+
     public ModelHealthTips(String htopic, String hdesc, String hdate, String purl) {
         this.htopic = htopic;
         this.hdesc = hdesc;
