@@ -2,66 +2,58 @@ package com.example.fitnessapp.model;
 
 
 public class diarymodel {
-    public String date, time, repeat, repeatNo, dailyWater,title;
+    public String dname, ddate, dcurrentweight, dbmi, ddesiredweight;
 
     public diarymodel() {
     }
 
-    public diarymodel(String date, String time, String repeat, String repeatNo, String dailyWater, String title) {
-        this.date = date;
-        this.time = time;
-        this.repeat = repeat;
-        this.repeatNo = repeatNo;
-        this.dailyWater = dailyWater;
-        this.title = title;
+    public diarymodel(String dname, String ddate, String dcurrentweight, String dbmi, String ddesiredweight) {
+        this.dname = dname;
+        this.ddate = ddate;
+        this.dcurrentweight = dcurrentweight;
+        this.dbmi = dbmi;
+        this.ddesiredweight = ddesiredweight;
+
     }
 
-    public String getDate() {
-        return date;
+    public String getDname() {
+        return dname;
     }
 
-    public void setDate(String date) {
-        this.date = date;
+    public void setDname(String dname) {
+        this.dname = dname;
     }
 
-    public String getTime() {
-        return time;
+    public String getDdate() {
+        return ddate;
     }
 
-    public void setTime(String time) {
-        this.time = time;
+    public void setDdate(String ddate) {
+        this.ddate = ddate;
     }
 
-    public String getRepeat() {
-        return repeat;
+    public String getDcurrentweight() {
+        return dcurrentweight;
     }
 
-    public void setRepeat(String repeat) {
-        this.repeat = repeat;
+    public void setDcurrentweight(String dcurrentweight) {
+        this.dcurrentweight = dcurrentweight;
     }
 
-    public String getRepeatNo() {
-        return repeatNo;
+    public String getDbmi() {
+        return dbmi;
     }
 
-    public void setRepeatNo(String repeatNo) {
-        this.repeatNo = repeatNo;
+    public void setDbmi(String dbmi) {
+        this.dbmi = dbmi;
     }
 
-    public String getDailyWater() {
-        return dailyWater;
+    public String getDdesiredweight() {
+        return ddesiredweight;
     }
 
-    public void setDailyWater(String dailyWater) {
-        this.dailyWater = dailyWater;
-    }
-
-    public String getTitle() {
-        return title;
-    }
-
-    public void setTitle(String title) {
-        this.title = title;
+    public void setDdesiredweight(String ddesiredweight) {
+        this.ddesiredweight = ddesiredweight;
     }
 }
 
