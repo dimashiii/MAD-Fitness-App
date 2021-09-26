@@ -4,8 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@color/black"
-    tools:context=".AddExercise">
+    tools:context=".DialogEditExercise">
 
     <TextView
         android:id="@+id/textView"
@@ -15,7 +14,7 @@
         android:layout_marginTop="65dp"
         android:layout_marginEnd="40dp"
         android:fontFamily="@font/asap_bold"
-        android:text="Add Exercise"
+        android:text="Change Exercise"
         android:textColor="@color/green4main"
         android:textSize="34sp"
         app:layout_constraintEnd_toEndOf="parent"
@@ -63,7 +62,7 @@
         android:layout_marginBottom="4dp"
         android:fontFamily="@font/asap_bold"
         android:text="Description"
-        android:textColor="@color/white"
+        android:textColor="@color/black"
         android:textSize="16sp"
         app:layout_constraintBottom_toTopOf="@+id/entereExerciseDescription"
         app:layout_constraintStart_toStartOf="parent" />
@@ -76,7 +75,7 @@
         android:layout_marginTop="20dp"
         android:fontFamily="@font/asap_bold"
         android:text="GIF"
-        android:textColor="@color/white"
+        android:textColor="@color/black"
         android:textSize="16sp"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/textInputLayout" />
@@ -89,7 +88,7 @@
         android:layout_marginTop="16dp"
         android:fontFamily="@font/asap_bold"
         android:text="Count"
-        android:textColor="@color/white"
+        android:textColor="@color/black"
         android:textSize="16sp"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/entereExerciseName" />
@@ -162,10 +161,10 @@
         android:layout_width="130dp"
         android:layout_height="36dp"
         android:layout_marginTop="32dp"
-        android:layout_marginEnd="36dp"
-        android:inputType="text"
+        android:layout_marginEnd="80dp"
         android:background="#FFFFFF"
         android:hint="Duration"
+        android:inputType="text"
         android:paddingLeft="5dp"
         android:textSize="16sp"
         app:layout_constraintEnd_toEndOf="parent"
@@ -176,26 +175,25 @@
         android:layout_width="120dp"
         android:layout_height="40dp"
         android:layout_marginEnd="40dp"
-        android:layout_marginBottom="44dp"
+        android:layout_marginBottom="128dp"
         android:background="@color/green4main"
         android:fontFamily="@font/asap_bold"
         android:text="Save"
         app:cornerRadius="23dp"
-        app:layout_constraintBottom_toTopOf="@+id/btnAdd"
+        app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent" />
 
     <Button
         android:id="@+id/btnBacK"
         android:layout_width="134dp"
         android:layout_height="44dp"
-        android:layout_marginEnd="15dp"
-        android:layout_marginRight="15dp"
-        android:layout_marginBottom="12dp"
+        android:layout_marginEnd="240dp"
+        android:layout_marginBottom="60dp"
+        android:backgroundTint="@color/black"
         android:fontFamily="@font/asap_bold"
-        android:text="View >>"
-        app:cornerRadius = "23dp"
-        android:backgroundTint="@color/white"
-        android:textColor="@color/green4main"
+        android:text="Back"
+        android:textColor="@color/white"
+        app:cornerRadius="23dp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent" />
 
@@ -228,42 +226,15 @@
         app:layout_constraintBottom_toTopOf="@+id/entereExerciseDescription"
         app:layout_constraintStart_toStartOf="parent" />
 
-    <Button
-        android:id="@+id/btnAdd"
-        android:layout_width="40dp"
-        android:layout_height="38dp"
-        android:layout_marginStart="58dp"
-        android:layout_marginBottom="65dp"
-        android:background="#000000"
-        android:text="+"
-        android:textColor="#FFFFFF"
-        app:cornerRadius="100dp"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="@+id/btndescription" />
-
-    <TextView
-        android:id="@+id/btndescription"
-        android:layout_width="152dp"
-        android:layout_height="18dp"
-        android:layout_marginStart="14dp"
-        android:layout_marginBottom="10dp"
-        android:fontFamily="@font/asap_bold"
-        android:text="Add Next Exercise"
-        android:textColor="@color/white"
-        android:textSize="16sp"
-        app:layout_constraintBottom_toTopOf="@+id/btnBacK"
-        app:layout_constraintStart_toEndOf="@+id/btnAdd" />
-
     <TextView
         android:id="@+id/textView24"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginStart="59dp"
-        android:layout_marginTop="130dp"
+        android:layout_marginTop="200dp"
         android:fontFamily="@font/asap_bold"
         android:text="Exercise Name"
-        android:textColor="@color/white"
+        android:textColor="@color/black"
         android:textSize="16dp"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />

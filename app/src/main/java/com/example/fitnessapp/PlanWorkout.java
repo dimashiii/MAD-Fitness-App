@@ -2,6 +2,7 @@ package com.example.fitnessapp;
 
 import androidx.annotation.NonNull;
 import androidx.appcompat.app.AppCompatActivity;
+import androidx.cardview.widget.CardView;
 import androidx.recyclerview.widget.DefaultItemAnimator;
 import androidx.recyclerview.widget.LinearLayoutManager;
 import androidx.recyclerview.widget.RecyclerView;
@@ -39,9 +40,7 @@ public class PlanWorkout extends AppCompatActivity {
     Button viewmorebtn;
     Button playbtn;
 
-
     private Button button;
-
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -58,6 +57,7 @@ public class PlanWorkout extends AppCompatActivity {
         deletebtn = findViewById(R.id.deletebtn);
         viewmorebtn = findViewById(R.id.viewMore);
 
+        //view
         final DatabaseReference nm = FirebaseDatabase.getInstance().getReference("ExercisesModel");
         nm.addValueEventListener(new ValueEventListener() {
             @Override
@@ -86,8 +86,14 @@ public class PlanWorkout extends AppCompatActivity {
             }
         });
 
-
         ExerciseAdapter exerciseAdapter = new ExerciseAdapter();
+
+        editbtn.setOnClickListener(view->{
+            Intent intentEdit = new Intent(this, DialogEditExercise.class);
+            startActivity(intentEdit);
+        });
+
+
         deletebtn.setOnClickListener(view -> {
             ExercisesModel exercisesModel = new ExercisesModel();
             exerciseAdapter.remove("exerciseName").addOnSuccessListener(success -> {

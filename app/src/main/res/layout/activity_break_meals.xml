@@ -1,0 +1,276 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:background="@color/cardview_light_background">
+
+    <TextView
+        android:id="@+id/textView19"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="263dp"
+        android:layout_marginTop="28dp"
+        android:layout_marginEnd="55dp"
+        android:text=""
+        android:textColor="@color/black"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ImageView
+        android:id="@+id/mealAdd"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="1dp"
+        android:layout_marginTop="28dp"
+        android:layout_marginEnd="22dp"
+        android:src="@android:drawable/ic_menu_add"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toEndOf="@+id/textView19"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/textView22"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="80dp"
+        android:layout_marginTop="13dp"
+        android:layout_marginEnd="78dp"
+        android:fontFamily="@font/asap_bold"
+        android:text=""
+        android:textColor="@color/teal_700"
+        android:textSize="33sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView19" />
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="380dp"
+        android:layout_height="150dp"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="80dp"
+        android:layout_marginEnd="3dp"
+        app:cardBackgroundColor="@color/blue2"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView22">
+
+        <ImageView
+            android:layout_width="140dp"
+            android:layout_height="140dp"
+            android:src="" />
+
+        <TextView
+            android:id="@+id/mealTime"
+            android:layout_width="60dp"
+            android:layout_height="20dp"
+            android:layout_marginStart="300dp"
+            android:layout_marginTop="8dp"
+            android:layout_marginEnd="90dp"
+            android:text="BREAKFAST"
+            android:textColor="@color/blue1"
+            android:textSize="10sp" />
+
+        <TextView
+            android:id="@+id/mealName"
+            android:layout_width="wrap_content"
+            android:layout_height="20dp"
+            android:layout_marginStart="150dp"
+            android:layout_marginTop="20dp"
+            android:layout_marginEnd="80dp"
+            android:fontFamily="sans-serif-medium"
+            android:text="Vegan Scramble"
+            android:textColor="@color/grey3"
+            android:textSize="13sp" />
+
+        <TextView
+            android:layout_width="100dp"
+            android:layout_height="20dp"
+            android:layout_marginStart="150dp"
+            android:layout_marginTop="45dp"
+            android:layout_marginEnd="90dp"
+            android:text="Calories" />
+
+        <ImageView
+            android:layout_width="24dp"
+            android:layout_height="24dp"
+            android:layout_marginStart="290dp"
+            android:layout_marginTop="45dp"
+            android:layout_marginEnd="90dp"
+             />
+
+        <TextView
+            android:id="@+id/calories"
+            android:layout_width="80dp"
+            android:layout_height="20dp"
+            android:layout_marginStart="319dp"
+            android:layout_marginTop="45dp"
+            android:layout_marginEnd="90dp"
+            android:text="128 kcal"
+            android:textColor="@color/grey3"
+            android:textSize="12sp" />
+
+        <TextView
+            android:layout_width="100dp"
+            android:layout_height="20dp"
+            android:layout_marginStart="150dp"
+            android:layout_marginTop="70dp"
+            android:layout_marginEnd="90dp"
+            android:text="Cooking Time" />
+
+        <ImageView
+            android:layout_width="24dp"
+            android:layout_height="24dp"
+            android:layout_marginStart="290dp"
+            android:layout_marginTop="70dp"
+            android:layout_marginEnd="90dp"
+      />
+
+
+        <TextView
+            android:id="@+id/cookingTime"
+            android:layout_width="80dp"
+            android:layout_height="20dp"
+            android:layout_marginStart="319dp"
+            android:layout_marginTop="71dp"
+            android:layout_marginEnd="90dp"
+            android:text="25 min"
+            android:textColor="@color/grey3"
+            android:textSize="12sp" />
+
+        <ImageView
+            android:layout_width="20dp"
+            android:layout_height="20dp"
+            android:layout_marginStart="310dp"
+            android:layout_marginTop="110dp"
+            android:layout_marginEnd="90dp"
+ />
+
+        <ImageView
+            android:layout_width="20dp"
+            android:layout_height="20dp"
+            android:layout_marginStart="338dp"
+            android:layout_marginTop="110dp"
+            android:layout_marginEnd="90dp"
+ />
+
+
+    </androidx.cardview.widget.CardView>
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="380dp"
+        android:layout_height="150dp"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="260dp"
+        android:layout_marginEnd="3dp"
+        android:background="@color/blue2"
+        app:cardBackgroundColor="@color/blue2"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView22">
+
+        <ImageView
+            android:layout_width="140dp"
+            android:layout_height="140dp"
+             />
+
+        <TextView
+            android:layout_width="60dp"
+            android:layout_height="20dp"
+            android:layout_marginStart="300dp"
+            android:layout_marginTop="8dp"
+            android:layout_marginEnd="90dp"
+            android:text="LUNCH"
+            android:textColor="@color/blue1"
+            android:textSize="10sp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="20dp"
+            android:layout_marginStart="150dp"
+            android:layout_marginTop="20dp"
+            android:layout_marginEnd="80dp"
+            android:fontFamily="sans-serif-medium"
+            android:text="Oatmeal and Almond"
+            android:textColor="@color/grey3"
+            android:textSize="13sp" />
+
+        <TextView
+            android:layout_width="100dp"
+            android:layout_height="20dp"
+            android:layout_marginStart="150dp"
+            android:layout_marginTop="45dp"
+            android:layout_marginEnd="90dp"
+            android:text="Calories" />
+
+        <ImageView
+            android:layout_width="24dp"
+            android:layout_height="24dp"
+            android:layout_marginStart="295dp"
+            android:layout_marginTop="45dp"
+            android:layout_marginEnd="90dp"
+            android:src="" />
+
+        <TextView
+            android:layout_width="80dp"
+            android:layout_height="20dp"
+            android:layout_marginStart="319dp"
+            android:layout_marginTop="45dp"
+            android:layout_marginEnd="90dp"
+            android:text="120kCal"
+            android:textColor="@color/grey3"
+            android:textSize="12sp" />
+
+        <TextView
+            android:layout_width="100dp"
+            android:layout_height="20dp"
+            android:layout_marginStart="150dp"
+            android:layout_marginTop="70dp"
+            android:layout_marginEnd="90dp"
+            android:text="Cooking time" />
+
+        <ImageView
+            android:layout_width="24dp"
+            android:layout_height="24dp"
+            android:layout_marginStart="295dp"
+            android:layout_marginTop="70dp"
+            android:layout_marginEnd="90dp"
+            android:src="" />
+
+
+        <TextView
+            android:layout_width="80dp"
+            android:layout_height="20dp"
+            android:layout_marginStart="319dp"
+            android:layout_marginTop="71dp"
+            android:layout_marginEnd="90dp"
+            android:text="30 min"
+            android:textColor="@color/grey3"
+            android:textSize="12sp" />
+
+        <ImageView
+            android:layout_width="20dp"
+            android:layout_height="20dp"
+            android:layout_marginStart="310dp"
+            android:layout_marginTop="110dp"
+            android:layout_marginEnd="90dp"
+            android:src="" />
+
+
+        <ImageView
+            android:layout_width="20dp"
+            android:layout_height="20dp"
+            android:layout_marginStart="338dp"
+            android:layout_marginTop="110dp"
+            android:layout_marginEnd="90dp"
+            android:src="" />
+    </androidx.cardview.widget.CardView>
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

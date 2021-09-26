@@ -14,6 +14,23 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.FitnessApp">
 
+        <activity android:name=".CardSelector">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".adddata"></activity>
+        <activity android:name=".MainActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+
+            </intent-filter>
+        </activity>
+        <activity android:name=".HealthJournal"></activity>
         <activity android:name=".AddHealthTipsActivity"></activity>
         <activity android:name=".HealthTipsActivity">
             <intent-filter>
@@ -23,7 +40,6 @@
             </intent-filter>
         </activity>
 
-
         <activity android:name=".CalcBmi">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
@@ -32,13 +48,6 @@
             </intent-filter>
         </activity>
 
-        <activity android:name=".CardSelector">
-            <intent-filter>
-                <action android:name="android.intent.action.MAIN" />
-
-                <category android:name="android.intent.category.LAUNCHER" />
-            </intent-filter>
-        </activity>
         <activity
             android:name=".AboutyouActivity"
             android:exported="true" />
@@ -75,7 +84,6 @@
         <activity
             android:name=".DailygoalsActivity"
             android:exported="true" />
-
         <activity android:name=".CreateWorkoutPlan">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
@@ -84,6 +92,13 @@
             </intent-filter>
         </activity>
         <activity android:name=".Workout">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".DialogPlanWokout">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
@@ -104,6 +119,13 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
+        <activity android:name=".DialogEditExercise">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
         <activity android:name=".HowToDoExercise">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
@@ -111,7 +133,6 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-
 
         <meta-data
             android:name="preloaded_fonts"

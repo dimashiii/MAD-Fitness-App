@@ -75,7 +75,7 @@ public class myadapter extends FirebaseRecyclerAdapter<model,myadapter.myviewhol
                                         map.put("email",email.getText().toString());
                                         map.put("course",course.getText().toString());
 
-                                        FirebaseDatabase.getInstance().getReference().child("students")
+                                        FirebaseDatabase.getInstance().getReference().child("healthPro")
                                                 .child(getRef(position).getKey()).updateChildren(map)
                                                 .addOnSuccessListener(new OnSuccessListener<Void>() {
                                                     @Override
@@ -101,13 +101,13 @@ public class myadapter extends FirebaseRecyclerAdapter<model,myadapter.myviewhol
                         @Override
                         public void onClick(View view) {
                             AlertDialog.Builder builder=new AlertDialog.Builder(holder.img.getContext());
-                            builder.setTitle("Delete Panel");
-                            builder.setMessage("Delete...?");
+                            builder.setTitle("Delete Tips");
+                            builder.setMessage("Delete");
 
                             builder.setPositiveButton("Yes", new DialogInterface.OnClickListener() {
                                 @Override
                                 public void onClick(DialogInterface dialogInterface, int i) {
-                                    FirebaseDatabase.getInstance().getReference().child("students")
+                                    FirebaseDatabase.getInstance().getReference().child("healthPro")
                                             .child(getRef(position).getKey()).removeValue();
                                 }
                             });
