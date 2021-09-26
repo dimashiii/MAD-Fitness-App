@@ -76,7 +76,7 @@
         android:id="@+id/btnContinue"
         android:layout_width="138dp"
         android:layout_height="51dp"
-        android:layout_marginTop="244dp"
+        android:layout_marginTop="200dp"
         android:layout_marginEnd="16dp"
         android:backgroundTint="@color/white"
         android:fontFamily="@font/asap_bold"

@@ -50,9 +50,6 @@ public class Workout extends AppCompatActivity {
         btnNext = (Button) findViewById(R.id.btnnNext);
 
 
-        //txtPlanName.setText(planName);
-        //txtPlanDuration.setText(planDuration);
-
         final DatabaseReference nm= FirebaseDatabase.getInstance().getReference("WorkoutPlanModel");
         nm.addValueEventListener(new ValueEventListener() {
             @Override
