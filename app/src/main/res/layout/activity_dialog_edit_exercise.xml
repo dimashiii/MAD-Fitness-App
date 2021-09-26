@@ -140,7 +140,7 @@
         android:hint="Enter Description"
         android:textColor="#80000000"
         android:textSize="16sp"
-        app:layout_constraintBottom_toTopOf="@+id/btnSave"
+        app:layout_constraintBottom_toTopOf="@+id/btnSaveMeals"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="parent" />
@@ -171,7 +171,7 @@
         app:layout_constraintTop_toTopOf="@+id/textView6" />
 
     <Button
-        android:id="@+id/btnSave"
+        android:id="@+id/btnSaveMeals"
         android:layout_width="120dp"
         android:layout_height="40dp"
         android:layout_marginEnd="40dp"
@@ -187,7 +187,7 @@
         android:id="@+id/btnBacK"
         android:layout_width="134dp"
         android:layout_height="44dp"
-        android:layout_marginEnd="260dp"
+        android:layout_marginEnd="240dp"
         android:layout_marginBottom="60dp"
         android:backgroundTint="@color/black"
         android:fontFamily="@font/asap_bold"

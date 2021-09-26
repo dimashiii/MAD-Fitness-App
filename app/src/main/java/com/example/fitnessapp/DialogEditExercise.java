@@ -39,7 +39,7 @@ public class DialogEditExercise extends AppCompatActivity {
         entereDuration = findViewById(R.id.entereDuration);
         entereGif = findViewById(R.id.entereGif);
         entereExerciseDescription = findViewById(R.id.entereExerciseDescription);
-        btnSave = findViewById(R.id.btnSave);
+        btnSave = findViewById(R.id.btnSaveMeals);
         btnBacK = findViewById(R.id.btnBacK);
 
         ExercisesModel exerciseModel = new ExercisesModel();
@@ -59,9 +59,9 @@ public class DialogEditExercise extends AppCompatActivity {
                 entereCount.setText("");
                 entereExerciseDescription.setText("");
                 entereGif.setText("");
-                Toast.makeText(this, "Details Inserted Successfully!", Toast.LENGTH_SHORT).show();
+                Toast.makeText(this, "Details UpdatedSuccessfully!", Toast.LENGTH_SHORT).show();
             }).addOnFailureListener(fail -> {
-                Toast.makeText(this, "Details Not Inserted !!", Toast.LENGTH_SHORT).show();
+                Toast.makeText(this, "Details Not Updated !!", Toast.LENGTH_SHORT).show();
                 ;
             });
 

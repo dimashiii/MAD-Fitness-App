@@ -42,8 +42,6 @@ public class DialogPlanWokout extends AppCompatActivity {
                 for (DataSnapshot postSnapshot : snapshot.getChildren()) {
                     WorkoutPlanModel workoutPlanModel = snapshot.getValue(WorkoutPlanModel.class);
 
-
-
                     String planName = workoutPlanModel.getPlanName();
                     String planDuration = workoutPlanModel.getPlanDuration();
                     enterEPlan.setText(planName);

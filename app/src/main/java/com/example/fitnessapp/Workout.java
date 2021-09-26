@@ -23,7 +23,7 @@ public class Workout extends AppCompatActivity {
     TextView txtPlanDuration;
     Button btnedit;
     Button btndelete;
-    Button btnNext;
+    Button btnnNext;
 
 
 
@@ -47,11 +47,8 @@ public class Workout extends AppCompatActivity {
         txtPlanDuration = (TextView) findViewById(R.id.txtPlanDuration);
         btnedit = (Button) findViewById(R.id.editbtn);
         btndelete = (Button) findViewById(R.id.deletebtn);
-        btnNext = (Button) findViewById(R.id.btnnNext);
+        btnnNext = (Button) findViewById(R.id.btnnNext);
 
-
-        //txtPlanName.setText(planName);
-        //txtPlanDuration.setText(planDuration);
 
         final DatabaseReference nm= FirebaseDatabase.getInstance().getReference("WorkoutPlanModel");
         nm.addValueEventListener(new ValueEventListener() {
@@ -93,12 +90,14 @@ public class Workout extends AppCompatActivity {
             });
 
 
-            btnNext.setOnClickListener(next -> {
-                Intent intentNext = new Intent(this, AddExercise.class);
-                startActivity(intentNext);
-            });
 
 
+
+        });
+
+        btnnNext.setOnClickListener(next -> {
+            Intent intentNext = new Intent(this, AddExercise.class);
+            startActivity(intentNext);
         });
 
 
