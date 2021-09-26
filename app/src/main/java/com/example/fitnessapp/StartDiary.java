@@ -1,14 +1,14 @@
 package com.example.fitnessapp;
 
-import android.os.Bundle;
-
 import androidx.appcompat.app.AppCompatActivity;
 
-public class PersonalDetails extends AppCompatActivity {
+import android.os.Bundle;
+
+public class StartDiary extends AppCompatActivity {
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_personal_details);
+        setContentView(R.layout.activity_start_diary);
     }
 }
