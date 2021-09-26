@@ -8,7 +8,6 @@ import android.widget.Button;
 import android.widget.EditText;
 import android.widget.Toast;
 
-import com.example.fitnessapp.adapter.ExerciseAdapter;
 import com.example.fitnessapp.model.ExercisesModel;
 import com.google.firebase.database.FirebaseDatabase;
 
@@ -32,22 +31,24 @@ public class AddExercise extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_add_exercise);
 
-        enterExerciseName = findViewById(R.id.enterExerciseName);
-        enterCount = findViewById(R.id.enterCount);
-        enterDuration = findViewById(R.id.enterDuration);
-        enterGif = findViewById(R.id.enterGif);
-        enterExerciseDescription = findViewById(R.id.enterExerciseDescription);
+        enterExerciseName = findViewById(R.id.entereExerciseName);
+        enterCount = findViewById(R.id.entereCount);
+        enterDuration = findViewById(R.id.entereDuration);
+        enterGif = findViewById(R.id.entereGif);
+        enterExerciseDescription = findViewById(R.id.entereExerciseDescription);
         btnSave = findViewById(R.id.btnSave);
         btnAdd = findViewById(R.id.btnAdd);
-        btnView = findViewById(R.id.btnView);
+        btnView = findViewById(R.id.btnBacK);
 
         ExercisesModel exerciseModel = new ExercisesModel();
+
 
         btnSave.setOnClickListener(view->{
             HashMap<String, Object> map = new HashMap<>();
             map.put("enterExerciseName", enterExerciseName.getText().toString());
             map.put("enterDuration", enterDuration.getText().toString());
             map.put("enterCount", enterCount.getText().toString());
+            map.put("enterGif",enterGif.getText().toString());
             map.put("enterExerciseDescription", enterExerciseDescription.getText().toString());
             FirebaseDatabase.getInstance().getReference().child("ExercisesModel").push()
                     .setValue(map).addOnSuccessListener(success -> {
@@ -55,6 +56,7 @@ public class AddExercise extends AppCompatActivity {
                 enterDuration.setText("");
                 enterCount.setText("");
                 enterExerciseDescription.setText("");
+                enterGif.setText("");
                 Toast.makeText(this, "Details Inserted Successfully!", Toast.LENGTH_SHORT).show();
             }).addOnFailureListener(fail -> {
                 Toast.makeText(this, "Details Not Inserted !!", Toast.LENGTH_SHORT).show();
