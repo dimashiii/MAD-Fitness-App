@@ -30,7 +30,7 @@
 
             </intent-filter>
         </activity>
-
+        <activity android:name=".HealthJournal"></activity>
         <activity android:name=".AddHealthTipsActivity"></activity>
         <activity android:name=".HealthTipsActivity">
             <intent-filter>
