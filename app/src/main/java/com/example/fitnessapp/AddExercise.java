@@ -8,7 +8,6 @@ import android.widget.Button;
 import android.widget.EditText;
 import android.widget.Toast;
 
-import com.example.fitnessapp.adapter.ExerciseAdapter;
 import com.example.fitnessapp.model.ExercisesModel;
 import com.google.firebase.database.FirebaseDatabase;
 

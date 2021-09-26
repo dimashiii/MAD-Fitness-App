@@ -9,9 +9,7 @@ import com.example.fitnessapp.databinding.ActivityBmiCategoryBinding;
 
 
 public class HealthJournal extends AppCompatActivity {
-
-
-
+   /*
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -25,5 +23,5 @@ public class HealthJournal extends AppCompatActivity {
         binding.healthprBtn.setOnClickListener(v -> {
             startActivity(new Intent(this, HealthTipsActivity.class));
         });
-    }
+    }*/
 }
