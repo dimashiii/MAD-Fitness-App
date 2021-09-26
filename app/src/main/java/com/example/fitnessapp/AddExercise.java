@@ -36,8 +36,8 @@ public class AddExercise extends AppCompatActivity {
         enterDuration = findViewById(R.id.entereDuration);
         enterGif = findViewById(R.id.entereGif);
         enterExerciseDescription = findViewById(R.id.entereExerciseDescription);
-        btnSave = findViewById(R.id.btnSave);
-        btnAdd = findViewById(R.id.btnAdd);
+        btnSave = findViewById(R.id.btnSaveMeals);
+        btnAdd = findViewById(R.id.btnAddMeals);
         btnView = findViewById(R.id.btnBacK);
 
         ExercisesModel exerciseModel = new ExercisesModel();
