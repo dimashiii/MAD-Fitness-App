@@ -14,7 +14,13 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.FitnessApp">
 
+        <activity android:name=".CardSelector">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
 
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
         <activity android:name=".adddata"></activity>
         <activity android:name=".MainActivity">
             <intent-filter>
@@ -24,7 +30,7 @@
 
             </intent-filter>
         </activity>
-
+        <activity android:name=".HealthJournal"></activity>
         <activity android:name=".AddHealthTipsActivity"></activity>
         <activity android:name=".HealthTipsActivity">
             <intent-filter>
@@ -41,13 +47,7 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-        <activity android:name=".CardSelector">
-            <intent-filter>
-                <action android:name="android.intent.action.MAIN" />
 
-                <category android:name="android.intent.category.LAUNCHER" />
-            </intent-filter>
-        </activity>
         <activity
             android:name=".AboutyouActivity"
             android:exported="true" />
