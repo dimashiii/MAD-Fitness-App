@@ -1,29 +1,33 @@
 package com.example.fitnessapp;
 
-import androidx.appcompat.app.AppCompatActivity;
-
 import android.content.Intent;
 import android.os.Bundle;
 
-import com.example.fitnessapp.databinding.ActivityBmiCategoryBinding;
-
+import androidx.appcompat.app.AppCompatActivity;
+import androidx.cardview.widget.CardView;
 
 public class HealthJournal extends AppCompatActivity {
 
-
+    CardView bmiCard;
+    CardView healthPrCard;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        //ActivityBmiCategoryBinding = ActivityBmiCategoryBinding.inflate(getLayoutInflater());
-        //setContentView(binding.getRoot());
+        setContentView(R.layout.activity_health_journal);
 
-        //binding.bmiBtn.setOnClickListener(v -> {
-            //startActivity(new Intent(this, CalcBmi.class));
-        //});
+        bmiCard = (CardView)findViewById(R.id.bmiBtn);
+        healthPrCard = (CardView)findViewById(R.id.healthprBtn);
 
-        //binding.healthprBtn.setOnClickListener(v -> {
-            //startActivity(new Intent(this, HealthTipsActivity.class));
-        //});
+        bmiCard.setOnClickListener(view ->{
+            Intent intentNext = new Intent(this, StartBmiCalActivity.class);
+            startActivity(intentNext);
+        });
+/*
+        healthPrCard.setOnClickListener(view ->{
+            Intent intentNext = new Intent(this, StartBmiCalActivity.class);
+            startActivity(intentNext);
+        });*/
     }
+
 }

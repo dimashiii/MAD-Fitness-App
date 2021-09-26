@@ -4,11 +4,11 @@ import android.os.Bundle;
 
 import androidx.appcompat.app.AppCompatActivity;
 
-public class PersonalDetails extends AppCompatActivity {
+public class BmiDiaryForm extends AppCompatActivity {
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_personal_details);
+        setContentView(R.layout.activity_bmi_diary_form);
     }
 }
