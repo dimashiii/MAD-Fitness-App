@@ -39,7 +39,8 @@
         <entry key="..\:/Projct work 2021/MyGit/MAD-Fitness-App/app/src/main/res/layout/activity_add_health_tips.xml" value="0.264" />
         <entry key="..\:/Projct work 2021/MyGit/MAD-Fitness-App/app/src/main/res/layout/activity_add_meals.xml" value="0.4" />
         <entry key="..\:/Projct work 2021/MyGit/MAD-Fitness-App/app/src/main/res/layout/activity_break_meals.xml" value="0.21981981981981982" />
-        <entry key="..\:/Projct work 2021/MyGit/MAD-Fitness-App/app/src/main/res/layout/activity_breakfast_meal.xml" value="0.4" />
+        <entry key="..\:/Projct work 2021/MyGit/MAD-Fitness-App/app/src/main/res/layout/activity_breakfast_meal.xml" value="0.3022113022113022" />
+        <entry key="..\:/Projct work 2021/MyGit/MAD-Fitness-App/app/src/main/res/layout/activity_edit_meals.xml" value="0.21981981981981982" />
         <entry key="..\:/Projct work 2021/MyGit/MAD-Fitness-App/app/src/main/res/layout/activity_health_journal.xml" value="0.21981981981981982" />
         <entry key="..\:/Projct work 2021/MyGit/MAD-Fitness-App/app/src/main/res/layout/activity_mainfood.xml" value="0.13619402985074627" />
         <entry key="..\:/Projct work 2021/MyGit/MAD-Fitness-App/app/src/main/res/layout/activity_personal_details.xml" value="0.21981981981981982" />
@@ -55,14 +56,12 @@
         <entry key="app/src/main/res/drawable/ic_baseline_search_24.xml" value="0.12314814814814815" />
         <entry key="app/src/main/res/drawable/ic_editbtn1.xml" value="0.12314814814814815" />
         <entry key="app/src/main/res/drawable/progress_bg.xml" value="0.12314814814814815" />
-        <entry key="app/src/main/res/drawable/startdiary_bg.xml" value="0.21288888888888888" />
         <entry key="app/src/main/res/drawable/tips_bg.xml" value="0.11296296296296296" />
         <entry key="app/src/main/res/font/asap.xml" value="0.13518518518518519" />
         <entry key="app/src/main/res/layout/activity_add_exercise.xml" value="0.19144144144144143" />
         <entry key="app/src/main/res/layout/activity_add_health_tips.xml" value="0.17927927927927928" />
         <entry key="app/src/main/res/layout/activity_adddata.xml" value="0.18888888888888888" />
         <entry key="app/src/main/res/layout/activity_bmi_category.xml" value="0.19862887354829273" />
-        <entry key="app/src/main/res/layout/activity_bmi_diary_form.xml" value="0.26587915873219875" />
         <entry key="app/src/main/res/layout/activity_calc_bmi.xml" value="0.165" />
         <entry key="app/src/main/res/layout/activity_card_selector.xml" value="0.19144144144144143" />
         <entry key="app/src/main/res/layout/activity_create_workout_plan.xml" value="0.19144144144144143" />
@@ -77,8 +76,6 @@
         <entry key="app/src/main/res/layout/activity_personal_details.xml" value="0.1" />
         <entry key="app/src/main/res/layout/activity_progress.xml" value="0.1" />
         <entry key="app/src/main/res/layout/activity_single_health_tip.xml" value="0.17927927927927928" />
-        <entry key="app/src/main/res/layout/activity_start_bmi_cal.xml" value="0.1" />
-        <entry key="app/src/main/res/layout/activity_start_diary.xml" value="0.2018018018018018" />
         <entry key="app/src/main/res/layout/activity_update_health_tips.xml" value="0.19144144144144143" />
         <entry key="app/src/main/res/layout/dialogcontent.xml" value="0.1361111111111111" />
         <entry key="app/src/main/res/layout/singlerow.xml" value="0.1" />
