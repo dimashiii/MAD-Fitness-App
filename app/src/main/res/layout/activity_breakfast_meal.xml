@@ -8,20 +8,16 @@
     tools:context=".BreakfastMeal">
 
 
-
-        <TextView
-            android:id="@+id/textView19"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_marginStart="263dp"
-            android:layout_marginTop="28dp"
-            android:layout_marginEnd="55dp"
-            android:text=""
-            android:textColor="@color/black"
-            app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintHorizontal_bias="1.0"
-            app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toTopOf="parent" />
+    <TextView
+        android:id="@+id/textView19"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="28dp"
+        android:layout_marginEnd="55dp"
+        android:text=""
+        android:textColor="@color/black"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
 
         <ImageView
             android:id="@+id/mealAdd"
@@ -51,119 +47,140 @@
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toBottomOf="@+id/textView19" />
 
-        <androidx.cardview.widget.CardView
-            android:layout_width="380dp"
-            android:layout_height="300dp"
-            android:layout_marginStart="10dp"
-            android:layout_marginTop="80dp"
-            android:layout_marginEnd="3dp"
-            app:cardBackgroundColor="@color/blue2"
-            app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintHorizontal_bias="0.0"
-            app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@+id/textView22">
+    <androidx.cardview.widget.CardView
+        android:id="@+id/cardView10"
+        android:layout_width="380dp"
+        android:layout_height="300dp"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="84dp"
+        android:layout_marginEnd="3dp"
+        app:cardBackgroundColor="@color/blue2"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView22">
 
-            <ImageView
-                android:layout_width="140dp"
-                android:layout_height="140dp"
-                android:src="" />
+        <ImageView
+            android:layout_width="140dp"
+            android:layout_height="140dp"
+            android:src="@drawable/break100" />
 
-            <TextView
-                android:id="@+id/mealTime"
-                android:layout_width="60dp"
-                android:layout_height="20dp"
-                android:layout_marginStart="300dp"
-                android:layout_marginTop="8dp"
-                android:layout_marginEnd="90dp"
-                android:text="BREAKFAST"
-                android:textColor="@color/blue1"
-                android:textSize="10sp" />
+        <TextView
+            android:id="@+id/mealTime"
+            android:layout_width="120dp"
+            android:layout_height="20dp"
+            android:layout_marginStart="180dp"
+            android:layout_marginTop="28dp"
+            android:layout_marginEnd="110dp"
 
-            <TextView
-                android:id="@+id/mealName"
-                android:layout_width="wrap_content"
-                android:layout_height="20dp"
-                android:layout_marginStart="150dp"
-                android:layout_marginTop="20dp"
-                android:layout_marginEnd="80dp"
-                android:fontFamily="sans-serif-medium"
-                android:text="Vegan Scramble"
-                android:textColor="@color/grey3"
-                android:textSize="13sp" />
+            android:fontFamily="@font/asap_bold"
+            android:text="BREAKFAST"
+            android:textColor="@color/grey3"
+            android:textSize="18sp" />
 
-            <TextView
-                android:layout_width="100dp"
-                android:layout_height="20dp"
-                android:layout_marginStart="150dp"
-                android:layout_marginTop="45dp"
-                android:layout_marginEnd="90dp"
-                android:text="Calories" />
+        <TextView
+            android:id="@+id/mealName"
+            android:layout_width="wrap_content"
+            android:layout_height="20dp"
+            android:layout_marginStart="165dp"
+            android:layout_marginTop="65dp"
+            android:layout_marginEnd="50dp"
+            android:fontFamily="@font/quicksand_bold"
+            android:text="Vegan Scramble"
+            android:textColor="@color/teal_700"
+            android:textSize="14sp" />
 
-            <ImageView
-                android:layout_width="24dp"
-                android:layout_height="24dp"
-                android:layout_marginStart="290dp"
-                android:layout_marginTop="45dp"
-                android:layout_marginEnd="90dp"
-                />
+        <TextView
+            android:layout_width="100dp"
+            android:layout_height="20dp"
+            android:layout_marginStart="150dp"
+            android:layout_marginTop="105dp"
+            android:layout_marginEnd="90dp"
+            android:text="Calories" />
 
-            <TextView
-                android:id="@+id/calories"
-                android:layout_width="80dp"
-                android:layout_height="20dp"
-                android:layout_marginStart="319dp"
-                android:layout_marginTop="45dp"
-                android:layout_marginEnd="90dp"
-                android:text="128 kcal"
-                android:textColor="@color/grey3"
-                android:textSize="12sp" />
+        <TextView
+            android:id="@+id/calories"
+            android:layout_width="100dp"
+            android:layout_height="20dp"
+            android:layout_marginStart="280dp"
+            android:layout_marginTop="105dp"
+            android:layout_marginEnd="90dp"
+            android:text="128 kcal"
+            android:textColor="@color/grey3"
+            android:textSize="12sp" />
 
-            <TextView
-                android:layout_width="100dp"
-                android:layout_height="20dp"
-                android:layout_marginStart="150dp"
-                android:layout_marginTop="70dp"
-                android:layout_marginEnd="90dp"
-                android:text="Cooking Time" />
+        <TextView
+            android:layout_width="100dp"
+            android:layout_height="20dp"
+            android:layout_marginStart="150dp"
+            android:layout_marginTop="135dp"
+            android:layout_marginEnd="90dp"
+            android:text="Cooking Time" />
 
-            <ImageView
-                android:layout_width="24dp"
-                android:layout_height="24dp"
-                android:layout_marginStart="290dp"
-                android:layout_marginTop="70dp"
-                android:layout_marginEnd="90dp"
-                />
+        <TextView
+            android:id="@+id/ingredients"
+            android:layout_width="100dp"
+            android:layout_height="20dp"
+            android:layout_marginStart="280dp"
+            android:layout_marginTop="170dp"
+            android:layout_marginEnd="90dp"
+            android:text="Ingredients" />
 
-
-            <TextView
-                android:id="@+id/cookingTime"
-                android:layout_width="80dp"
-                android:layout_height="20dp"
-                android:layout_marginStart="319dp"
-                android:layout_marginTop="71dp"
-                android:layout_marginEnd="90dp"
-                android:text="25 min"
-                android:textColor="@color/grey3"
-                android:textSize="12sp" />
-
-            <ImageView
-                android:layout_width="20dp"
-                android:layout_height="20dp"
-                android:layout_marginStart="310dp"
-                android:layout_marginTop="110dp"
-                android:layout_marginEnd="90dp"
-                />
-
-            <ImageView
-                android:layout_width="20dp"
-                android:layout_height="20dp"
-                android:layout_marginStart="338dp"
-                android:layout_marginTop="110dp"
-                android:layout_marginEnd="90dp"
-                />
+        <TextView
+            android:layout_width="100dp"
+            android:layout_height="20dp"
+            android:layout_marginStart="150dp"
+            android:layout_marginTop="170dp"
+            android:layout_marginEnd="90dp"
+            android:text="Ingredients" />
 
 
-        </androidx.cardview.widget.CardView>
+        <TextView
+            android:id="@+id/cookingTime"
+            android:layout_width="80dp"
+            android:layout_height="20dp"
+            android:layout_marginStart="280dp"
+            android:layout_marginTop="135dp"
+            android:layout_marginEnd="90dp"
+            android:text="25 min"
+            android:textColor="@color/grey3"
+            android:textSize="12sp" />
+
+
+    </androidx.cardview.widget.CardView>
+
+
+    <Button
+        android:id="@+id/editmeals"
+        android:layout_width="110dp"
+        android:layout_height="40dp"
+        android:layout_marginTop="48dp"
+        android:layout_marginEnd="36dp"
+        android:layout_marginBottom="117dp"
+        android:background="@color/white"
+
+        android:text="EDIT"
+        android:textSize="14sp"
+        app:backgroundTint="@color/green3"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/cardView10"
+        app:layout_constraintVertical_bias="0.0" />
+
+    <Button
+        android:id="@+id/deletemeals"
+        android:layout_width="110dp"
+        android:layout_height="40dp"
+        android:layout_marginStart="138dp"
+        android:layout_marginTop="48dp"
+        android:layout_marginEnd="43dp"
+        android:background="@color/d_red1"
+        android:text="DELETE"
+        android:textSize="14sp"
+        app:backgroundTint="@color/d_red1"
+        app:layout_constraintEnd_toStartOf="@+id/editmeals"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/cardView10" />
 
 
 </androidx.constraintlayout.widget.ConstraintLayout>
