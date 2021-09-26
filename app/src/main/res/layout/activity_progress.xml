@@ -8,173 +8,9 @@
     tools:context=".Progress">
 
 
-    <TextView
-        android:id="@+id/topic_height"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_centerHorizontal="true"
-        android:layout_marginTop="48dp"
-        android:fontFamily="@font/quicksand_bold"
-        android:text="@string/progress_cardname"
-        android:textColor="@color/black"
-        android:textSize="34dp"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.498"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
-
     <androidx.cardview.widget.CardView
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_below="@+id/seekBar"
-        android:layout_alignParentEnd="true"
-        android:layout_centerHorizontal="true"
-        android:layout_marginStart="10dp"
-        android:layout_marginTop="46dp"
-        android:layout_marginEnd="2dp"
-        android:layout_marginBottom="10dp"
-        app:cardBackgroundColor="@color/blue5"
-        app:cardCornerRadius="20dp"
-        app:cardElevation="10dp"
-        app:cardMaxElevation="12dp"
-        app:cardPreventCornerOverlap="true"
-        app:cardUseCompatPadding="true">
-
-        <!-- card-view widget -->
-        <RelativeLayout
-            android:layout_width="match_parent"
-            android:layout_height="117dp">
-
-            <!--ImageVIew to display our Course Image
-            <ImageView
-                android:id="@+id/idIVCourseImage"
-                android:layout_width="100dp"
-                android:layout_height="100dp"
-                android:layout_margin="10dp"
-                android:contentDescription="@string/app_name"
-                android:padding="5dp"
-                android:src="@drawable/gfgimage" />-->
-
-            <!--Text View to display Course Name-->
-
-            <!--Text VIew to display Course Rating-->
-            <!--Image used in present in drawable folder-->
-
-
-            <TextView
-                android:id="@+id/d_date1"
-                android:layout_width="113dp"
-                android:layout_height="wrap_content"
-                android:layout_alignParentStart="true"
-                android:layout_marginStart="25dp"
-                android:layout_marginTop="10dp"
-                android:text="@string/date1"
-                android:textColor="@color/black"
-                android:textSize="18sp"
-                android:textStyle="bold" />
-
-            <TextView
-
-                android:id="@+id/d_my_weight1"
-                android:layout_width="113dp"
-                android:layout_height="wrap_content"
-                android:layout_below="@id/d_date1"
-                android:layout_alignParentStart="true"
-                android:layout_marginStart="25dp"
-                android:layout_marginTop="18dp"
-                android:drawablePadding="2dp"
-                android:fontFamily="@font/asap_medium"
-                android:text="@string/d_my_weight1" />
-
-            <TextView
-
-                android:layout_width="113dp"
-                android:layout_height="wrap_content"
-                android:layout_below="@id/d_my_weight1"
-                android:layout_alignParentStart="true"
-                android:layout_marginStart="25dp"
-                android:layout_marginTop="18dp"
-                android:drawablePadding="2dp"
-                android:fontFamily="@font/asap_medium"
-                android:text="@string/d_my_bmi1" />
-
-            <TextView
-                android:id="@+id/bmiTime1"
-                android:layout_width="78dp"
-                android:layout_height="wrap_content"
-                android:layout_alignParentTop="true"
-                android:layout_alignParentEnd="true"
-                android:layout_marginTop="12dp"
-                android:layout_marginEnd="32dp"
-                android:fontFamily="@font/asap_bold"
-                android:text="@string/bmiTime1" />
-
-            <TextView
-                android:id="@+id/weight_value1"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_below="@+id/bmiTime1"
-                android:layout_alignParentEnd="true"
-                android:layout_marginTop="19dp"
-                android:layout_marginEnd="130dp"
-                android:fontFamily="@font/quicksand"
-                android:text="@string/wheight_value1" />
-
-            <TextView
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_below="@+id/weight_value1"
-                android:layout_alignParentEnd="true"
-                android:layout_marginTop="19dp"
-                android:layout_marginEnd="147dp"
-                android:fontFamily="@font/quicksand"
-                android:text="@string/bmivalue1" />
-
-
-        </RelativeLayout>
-
-    </androidx.cardview.widget.CardView>
-
-    <SeekBar
-        android:id="@+id/seekBar"
-        style="@style/Widget.AppCompat.SeekBar.Discrete"
-        android:layout_width="319dp"
-        android:layout_height="39dp"
-        android:layout_below="@+id/topic_height"
-        android:layout_alignParentStart="true"
-        android:layout_centerHorizontal="true"
-        android:layout_marginStart="47dp"
-        android:layout_marginTop="57dp"
-        android:max="10"
-        android:progress="3" />
-
-    <TextView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_alignParentStart="true"
-        android:layout_alignParentTop="true"
-        android:layout_marginStart="20dp"
-        android:layout_marginTop="116dp"
-        android:fontFamily="@font/asap_bold"
-        android:text="@string/d_currentweight"
-        android:textColor="@color/d_red1" />
-
-    <TextView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_alignParentTop="true"
-        android:layout_alignParentEnd="true"
-        android:layout_marginTop="116dp"
-        android:layout_marginEnd="20dp"
-        android:fontFamily="@font/asap_bold"
-        android:textColor="@color/green4main"
-        android:text="@string/d_desiredweight" />
-
-
-    <androidx.cardview.widget.CardView
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_below="@+id/seekBar"
         android:layout_alignParentEnd="true"
         android:layout_centerHorizontal="true"
         android:layout_marginStart="10dp"
@@ -277,6 +113,46 @@
                 android:layout_marginEnd="132dp"
                 android:fontFamily="@font/quicksand"
                 android:text="@string/bmivalue2" />
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="117dp">
+
+            <!--ImageVIew to display our Course Image
+            <ImageView
+                android:id="@+id/idIVCourseImage"
+                android:layout_width="100dp"
+                android:layout_height="100dp"
+                android:layout_margin="10dp"
+                android:contentDescription="@string/app_name"
+                android:padding="5dp"
+                android:src="@drawable/gfgimage" />-->
+
+            <!--Text View to display Course Name-->
+
+            <!--Text VIew to display Course Rating-->
+            <!--Image used in present in drawable folder-->
+
+
+
+
+
+            <TextView
+                android:id="@+id/bmiTime1"
+                android:layout_width="78dp"
+                android:layout_height="wrap_content"
+                android:layout_alignParentTop="true"
+                android:layout_alignParentEnd="true"
+                android:layout_marginTop="12dp"
+                android:layout_marginEnd="32dp"
+                android:fontFamily="@font/asap_bold"
+                android:text="@string/bmiTime1" />
+
+
+
+
 
         </RelativeLayout>
 

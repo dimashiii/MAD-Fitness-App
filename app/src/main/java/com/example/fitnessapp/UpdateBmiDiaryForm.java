@@ -1,19 +1,19 @@
 package com.example.fitnessapp;
 
-        import androidx.appcompat.app.AppCompatActivity;
+import androidx.appcompat.app.AppCompatActivity;
 
-        import android.content.Intent;
-        import android.os.Bundle;
-        import android.widget.Button;
-        import android.widget.EditText;
-        import android.widget.Toast;
+import android.content.Intent;
+import android.os.Bundle;
+import android.widget.Button;
+import android.widget.EditText;
+import android.widget.Toast;
 
-        import com.example.fitnessapp.model.diarymodel;
-        import com.google.firebase.database.FirebaseDatabase;
+import com.example.fitnessapp.model.diarymodel;
+import com.google.firebase.database.FirebaseDatabase;
 
-        import java.util.HashMap;
+import java.util.HashMap;
 
-public class BmiDiaryForm extends AppCompatActivity {
+public class UpdateBmiDiaryForm extends AppCompatActivity {
 
     EditText enterDname;
     EditText enterDdate;
@@ -23,7 +23,6 @@ public class BmiDiaryForm extends AppCompatActivity {
     Button btnSave1;
     Button btnAdd1;
     Button btnBack1;
-    Button btnView1;
 
 
 
@@ -39,7 +38,7 @@ public class BmiDiaryForm extends AppCompatActivity {
         enterDdesiredweight= findViewById(R.id.add_desiredweight);
         btnSave1 = findViewById(R.id.diarysubmit);
         //btnAdd1 = findViewById(R.id.diaryadd);
-        btnView1 = findViewById(R.id.diaryback);
+        btnBack1 = findViewById(R.id.diaryback);
 
 
         diarymodel dmodel = new diarymodel();
@@ -59,15 +58,15 @@ public class BmiDiaryForm extends AppCompatActivity {
                 enterDcurrentweight.setText("");
                 enterDbmi.setText("");
                 enterDdesiredweight.setText("");
-                Toast.makeText(this, "Details Inserted Successfully!", Toast.LENGTH_SHORT).show();
+                Toast.makeText(this, "Details Updated Successfully!", Toast.LENGTH_SHORT).show();
             }).addOnFailureListener(fail -> {
-                Toast.makeText(this, "Details Not Inserted !!", Toast.LENGTH_SHORT).show();
+                Toast.makeText(this, "Details Not Updated !!", Toast.LENGTH_SHORT).show();
                 ;
             });
 
         });
 
-        btnView1.setOnClickListener(view->{
+        btnBack1.setOnClickListener(view->{
             Intent intent = new Intent(this,PlanWorkout.class);
 
             String dname = enterDname.getText().toString();
@@ -87,7 +86,7 @@ public class BmiDiaryForm extends AppCompatActivity {
         });
 
         btnBack1.setOnClickListener(view->{
-            Intent i= new Intent(this,BmiDiaryForm.class);
+            Intent i= new Intent(this,Progress.class);
             startActivity(i);
         });
 
