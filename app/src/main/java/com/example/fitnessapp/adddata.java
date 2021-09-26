@@ -58,7 +58,7 @@ public class adddata extends AppCompatActivity
         map.put("course",course.getText().toString());
         map.put("email",email.getText().toString());
         map.put("purl",purl.getText().toString());
-        FirebaseDatabase.getInstance().getReference().child("students").push()
+        FirebaseDatabase.getInstance().getReference().child("healthPro").push()
                 .setValue(map)
                 .addOnSuccessListener(new OnSuccessListener<Void>() {
                     @Override
