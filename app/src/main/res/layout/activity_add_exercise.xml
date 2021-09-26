@@ -260,7 +260,7 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginStart="59dp"
-        android:layout_marginTop="200dp"
+        android:layout_marginTop="130dp"
         android:fontFamily="@font/asap_bold"
         android:text="Exercise Name"
         android:textColor="@color/white"

@@ -2,6 +2,7 @@ package com.example.fitnessapp;
 
 import androidx.annotation.NonNull;
 import androidx.appcompat.app.AppCompatActivity;
+import androidx.cardview.widget.CardView;
 import androidx.recyclerview.widget.DefaultItemAnimator;
 import androidx.recyclerview.widget.LinearLayoutManager;
 import androidx.recyclerview.widget.RecyclerView;
@@ -39,9 +40,7 @@ public class PlanWorkout extends AppCompatActivity {
     Button viewmorebtn;
     Button playbtn;
 
-
     private Button button;
-
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -86,9 +85,6 @@ public class PlanWorkout extends AppCompatActivity {
 
             }
         });
-
-
-
 
         ExerciseAdapter exerciseAdapter = new ExerciseAdapter();
 

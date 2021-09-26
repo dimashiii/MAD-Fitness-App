@@ -59,9 +59,9 @@ public class DialogEditExercise extends AppCompatActivity {
                 entereCount.setText("");
                 entereExerciseDescription.setText("");
                 entereGif.setText("");
-                Toast.makeText(this, "Details Inserted Successfully!", Toast.LENGTH_SHORT).show();
+                Toast.makeText(this, "Details UpdatedSuccessfully!", Toast.LENGTH_SHORT).show();
             }).addOnFailureListener(fail -> {
-                Toast.makeText(this, "Details Not Inserted !!", Toast.LENGTH_SHORT).show();
+                Toast.makeText(this, "Details Not Updated !!", Toast.LENGTH_SHORT).show();
                 ;
             });
 
