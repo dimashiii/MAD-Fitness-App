@@ -39,7 +39,7 @@ public class DialogEditExercise extends AppCompatActivity {
         entereDuration = findViewById(R.id.entereDuration);
         entereGif = findViewById(R.id.entereGif);
         entereExerciseDescription = findViewById(R.id.entereExerciseDescription);
-        btnSave = findViewById(R.id.btnSave);
+        btnSave = findViewById(R.id.btnSaveMeals);
         btnBacK = findViewById(R.id.btnBacK);
 
         ExercisesModel exerciseModel = new ExercisesModel();

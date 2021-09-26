@@ -31,11 +31,11 @@ public class CardSelector extends AppCompatActivity {
         });
 
         //mealPlan--> thissa
-       /* mealplan.setOnClickListener(view->{
-            Intent intentmeals = new Intent(this, MealJournal.class);
+        mealplan.setOnClickListener(view->{
+            Intent intentmeals = new Intent(this, AddMeals.class);
 
             startActivity(intentmeals);
-        });*/
+        });
 
         //health
 
