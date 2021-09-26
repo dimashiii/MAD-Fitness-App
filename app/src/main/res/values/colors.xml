@@ -24,8 +24,7 @@
     <color name="colorPrimary">#009688</color>
 
     <color name="d_red1">#E14041</color>
-    <color name="yellow">#7AF4E736</color>
-    <color name="yellow3">#F4CB36</color>
+    <color name="d_yellow">#F4B400</color>
 
 
 </resources>

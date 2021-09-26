@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.appcompat.widget.LinearLayoutCompat xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:gravity="center"
+    android:background="@drawable/sportgirl"
+    tools:context=".BmiDiaryForm">
+
+
+    <TextView
+        android:id="@+id/deardiaryheading"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="100dp"
+        android:layout_marginBottom="25dp"
+        android:fontFamily="@font/quicksand_bold"
+        android:text="Dear Diary"
+        android:textColor="@color/black"
+        android:textSize="40dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+    <EditText
+        android:layout_width="300dp"
+        android:layout_height="45dp"
+        android:elevation="12sp"
+        android:background="@color/white"
+        android:id="@+id/add_dname"
+        android:textSize="20sp"
+        android:hint="Name"
+        android:paddingLeft="15dp"
+        android:layout_marginBottom="15dp"
+        android:textColor="#000" />
+
+    <EditText
+        android:layout_width="300dp"
+        android:layout_height="45dp"
+        android:elevation="12sp"
+        android:background="@color/white"
+        android:id="@+id/add_ddate"
+        android:textSize="20sp"
+        android:hint="Date"
+        android:paddingLeft="15dp"
+        android:layout_marginBottom="15dp"
+        android:textColor="#000" />
+
+    <EditText
+        android:layout_width="300dp"
+        android:layout_height="45dp"
+        android:background="@color/white"
+        android:id="@+id/add_currentweight"
+        android:textSize="20sp"
+        android:hint="Current Weight"
+        android:layout_marginBottom="25dp"
+        android:paddingLeft="15dp"
+        android:elevation="12sp"
+        android:textColor="#000"/>
+
+    <EditText
+        android:layout_width="300dp"
+        android:layout_height="45dp"
+        android:elevation="12sp"
+        android:background="@color/white"
+        android:id="@+id/add_bmi"
+        android:textSize="20sp"
+        android:paddingLeft="15dp"
+        android:hint="Calculated BMI"
+        android:layout_marginBottom="25dp"
+        android:textColor="#000"/>
+
+
+    <EditText
+        android:layout_width="300dp"
+        android:layout_height="45dp"
+        android:elevation="12sp"
+        android:background="@color/white"
+        android:id="@+id/add_desiredweight"
+        android:textSize="20sp"
+        android:hint="Desired Weight"
+        android:paddingLeft="15dp"
+        android:layout_marginBottom="45dp"
+        android:textColor="#000"/>
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="15dp"
+        android:id="@+id/diarysubmit"
+        android:background="@drawable/bgbtnblue"
+        app:backgroundTint="@color/green1"
+        android:textSize="20sp"
+        android:paddingLeft="15dp"
+        android:text="Add Your Records"/>
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/diaryback"
+        android:background="@drawable/bgbtnblue"
+        app:backgroundTint="@color/d_yellow"
+        android:textSize="20sp"
+        android:text="Back"/>
+
+
+</androidx.appcompat.widget.LinearLayoutCompat>
