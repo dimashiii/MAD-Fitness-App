@@ -2,6 +2,7 @@
 <androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/imageU41"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:background="@color/cardview_light_background"
@@ -19,33 +20,33 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
-        <ImageView
-            android:id="@+id/mealAdd"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_marginStart="1dp"
-            android:layout_marginTop="28dp"
-            android:layout_marginEnd="22dp"
-            android:src="@android:drawable/ic_menu_add"
-            app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintHorizontal_bias="1.0"
-            app:layout_constraintStart_toEndOf="@+id/textView19"
-            app:layout_constraintTop_toTopOf="parent" />
+    <ImageView
+        android:id="@+id/mealAdd"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="1dp"
+        android:layout_marginTop="28dp"
+        android:layout_marginEnd="22dp"
+        android:src="@android:drawable/ic_menu_add"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toEndOf="@+id/textView19"
+        app:layout_constraintTop_toTopOf="parent" />
 
-        <TextView
-            android:id="@+id/textView22"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_marginStart="80dp"
-            android:layout_marginTop="13dp"
-            android:layout_marginEnd="78dp"
-            android:fontFamily="@font/asap_bold"
-            android:text=""
-            android:textColor="@color/teal_700"
-            android:textSize="33sp"
-            app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@+id/textView19" />
+    <TextView
+        android:id="@+id/textView22"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="80dp"
+        android:layout_marginTop="13dp"
+        android:layout_marginEnd="78dp"
+        android:fontFamily="@font/asap_bold"
+        android:text=""
+        android:textColor="@color/teal_700"
+        android:textSize="33sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView19" />
 
     <androidx.cardview.widget.CardView
         android:id="@+id/cardView10"
@@ -61,6 +62,7 @@
         app:layout_constraintTop_toBottomOf="@+id/textView22">
 
         <ImageView
+            android:id="@+id/imageU4560"
             android:layout_width="140dp"
             android:layout_height="140dp"
             android:src="@drawable/break100" />
@@ -91,6 +93,7 @@
             android:textSize="14sp" />
 
         <TextView
+            android:id="@+id/textU2"
             android:layout_width="100dp"
             android:layout_height="20dp"
             android:layout_marginStart="150dp"
@@ -110,6 +113,7 @@
             android:textSize="12sp" />
 
         <TextView
+            android:id="@+id/TextU23"
             android:layout_width="100dp"
             android:layout_height="20dp"
             android:layout_marginStart="150dp"
@@ -127,6 +131,7 @@
             android:text="Ingredients" />
 
         <TextView
+            android:id="@+id/text456"
             android:layout_width="100dp"
             android:layout_height="20dp"
             android:layout_marginStart="150dp"
