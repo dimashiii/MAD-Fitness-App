@@ -1,131 +1,108 @@
 <?xml version="1.0" encoding="utf-8"?>
-<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<androidx.appcompat.widget.LinearLayoutCompat xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:gravity="center"
     android:background="@drawable/sportgirl"
     tools:context=".BmiDiaryForm">
 
+
     <TextView
-        android:id="@+id/textView6"
+        android:id="@+id/deardiaryheading"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginStart="78dp"
-        android:layout_marginTop="184dp"
-        android:layout_marginEnd="78dp"
+        android:layout_marginTop="100dp"
+        android:layout_marginBottom="25dp"
         android:fontFamily="@font/quicksand_bold"
-        android:text="@string/topic_personaldata"
-        android:textColor="@color/white"
-        android:textSize="34sp"
+        android:text="Dear Diary"
+        android:textColor="@color/black"
+        android:textSize="40dp"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
-
-    <com.google.android.material.textfield.TextInputEditText
-        android:id="@+id/textInputEditText"
-        android:layout_width="287dp"
+    <EditText
+        android:layout_width="300dp"
         android:layout_height="45dp"
-        android:layout_marginStart="55dp"
-        android:layout_marginTop="20dp"
-        android:layout_marginEnd="55dp"
+        android:elevation="12sp"
         android:background="@color/white"
-        android:backgroundTint="@color/white"
-        android:fontFamily="@font/asap"
-        android:hint="set date"
-        android:paddingLeft="8dp"
-        android:textSize="16sp"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.0"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/textView6" />
+        android:id="@+id/add_dname"
+        android:textSize="20sp"
+        android:hint="Name"
+        android:paddingLeft="15dp"
+        android:layout_marginBottom="15dp"
+        android:textColor="#000" />
 
-    <com.google.android.material.textfield.TextInputEditText
-        android:id="@+id/textInputEditText2"
-        android:layout_width="286dp"
-        android:layout_height="47dp"
-        android:layout_marginStart="55dp"
-        android:layout_marginTop="32dp"
-        android:layout_marginEnd="55dp"
-        android:background="@color/white"
-        android:backgroundTint="@color/white"
-        android:fontFamily="@font/asap"
-        android:hint="172cm"
-        android:paddingLeft="8dp"
-        android:textSize="16sp"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.0"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/textInputEditText" />
-
-    <com.google.android.material.textfield.TextInputEditText
-        android:id="@+id/textInputEditText3"
-        android:layout_width="284dp"
+    <EditText
+        android:layout_width="300dp"
         android:layout_height="45dp"
-        android:layout_marginTop="28dp"
-        android:layout_marginEnd="52dp"
+        android:elevation="12sp"
         android:background="@color/white"
-        android:backgroundTint="@color/white"
-        android:fontFamily="@font/asap"
-        android:hint="setBMI"
-        android:paddingLeft="8dp"
-        android:textSize="16sp"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/textInputEditText2" />
+        android:id="@+id/add_ddate"
+        android:textSize="20sp"
+        android:hint="Date"
+        android:paddingLeft="15dp"
+        android:layout_marginBottom="15dp"
+        android:textColor="#000" />
 
-    <com.google.android.material.textfield.TextInputEditText
-        android:id="@+id/desired_weight"
-        android:layout_width="284dp"
+    <EditText
+        android:layout_width="300dp"
         android:layout_height="45dp"
-        android:layout_marginTop="108dp"
-        android:layout_marginEnd="52dp"
         android:background="@color/white"
-        android:backgroundTint="@color/white"
-        android:fontFamily="@font/asap"
-        android:hint="@string/d_desiredweight"
-        android:paddingLeft="8dp"
-        android:textSize="16sp"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/textInputEditText2" />
+        android:id="@+id/add_currentweight"
+        android:textSize="20sp"
+        android:hint="Current Weight"
+        android:layout_marginBottom="25dp"
+        android:paddingLeft="15dp"
+        android:elevation="12sp"
+        android:textColor="#000"/>
 
-    <ImageView
-        android:layout_width="30dp"
-        android:layout_height="wrap_content"
-        android:layout_marginStart="4dp"
-        android:layout_marginTop="13dp"
-        android:layout_marginEnd="84dp"
-        android:layout_marginBottom="7dp"
-        app:layout_constraintBottom_toTopOf="@+id/textInputEditText"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toEndOf="@+id/textView6"
-        app:layout_constraintTop_toBottomOf="@+id/textView6"
-        app:srcCompat="@drawable/ic_baseline_calendar_today_24"
-        tools:ignore="VectorDrawableCompat" />
+    <EditText
+        android:layout_width="300dp"
+        android:layout_height="45dp"
+        android:elevation="12sp"
+        android:background="@color/white"
+        android:id="@+id/add_bmi"
+        android:textSize="20sp"
+        android:paddingLeft="15dp"
+        android:hint="Calculated BMI"
+        android:layout_marginBottom="25dp"
+        android:textColor="#000"/>
 
-    <Button
-        android:id="@+id/button2"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginStart="104dp"
-        android:layout_marginBottom="48dp"
-        android:backgroundTint="@color/white"
-        android:text="@string/savebtn_d1"
-        android:textColor="@color/green4main"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintStart_toStartOf="parent" />
+
+    <EditText
+        android:layout_width="300dp"
+        android:layout_height="45dp"
+        android:elevation="12sp"
+        android:background="@color/white"
+        android:id="@+id/add_desiredweight"
+        android:textSize="20sp"
+        android:hint="Desired Weight"
+        android:paddingLeft="15dp"
+        android:layout_marginBottom="45dp"
+        android:textColor="#000"/>
 
     <Button
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginStart="5dp"
-        android:layout_marginEnd="103dp"
-        android:layout_marginBottom="48dp"
-        android:backgroundTint="@color/d_red1"
-        android:text="@string/resetbtn"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="1.0"
-        app:layout_constraintStart_toEndOf="@+id/button2" />
+        android:layout_marginBottom="15dp"
+        android:id="@+id/diarysubmit"
+        android:background="@drawable/bgbtnblue"
+        app:backgroundTint="@color/green1"
+        android:textSize="20sp"
+        android:paddingLeft="15dp"
+        android:text="Add Your Records"/>
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/diaryback"
+        android:background="@drawable/bgbtnblue"
+        app:backgroundTint="@color/d_yellow"
+        android:textSize="20sp"
+        android:text="Back"/>
 
 
-</androidx.constraintlayout.widget.ConstraintLayout>
+</androidx.appcompat.widget.LinearLayoutCompat>

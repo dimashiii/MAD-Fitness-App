@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/startdiary_bg"
+    android:contentDescription="Get start write the diary"
+    tools:context=".StartDiary">
+
+    <TextView
+        android:id="@+id/"
+        android:layout_width="349dp"
+        android:layout_height="60dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginEnd="8dp"
+        android:fontFamily="@font/asap_bold"
+        android:text="Dr Mr Diary"
+        android:textColor="@color/teal_700"
+        android:textSize="34sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.581"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.041" />
+
+    <TextView
+        android:layout_width="336dp"
+        android:layout_height="121dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="8dp"
+        android:lineSpacingExtra="8dp"
+        android:text="Body, Mind, Intellect and BMI...If perfect, you are ready conquer the unseen
+
+
+        --KANSY"
+        android:textAlignment="center"
+        android:textColor="@color/grey3"
+        android:textSize="18sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.441"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/bmistartheading"
+        app:layout_constraintVertical_bias="0.0" />
+
+    <Button
+        android:id="@+id/bmistartbtn"
+        android:layout_width="239dp"
+        android:layout_height="74dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginEnd="8dp"
+        android:elevation="8sp"
+        android:text="Let's Start"
+        android:textAllCaps="false"
+        android:textColor="@color/grey4dark"
+        android:textSize="20sp"
+        app:backgroundTint="@color/teal_700"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.814"
+        app:rippleColor="#7C7070" />
+
+    <ImageView
+        android:layout_width="339dp"
+        android:layout_height="311dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@mipmap/fitnessdiary" />
+
+    <Button
+        android:id="@+id/diarybtn"
+        android:layout_width="232dp"
+        android:layout_height="47dp"
+        android:layout_marginTop="34dp"
+        android:elevation="8sp"
+        android:text="My Fitness Diary"
+        android:textAllCaps="false"
+        android:textColor="@color/grey4dark"
+        android:textSize="20sp"
+        app:backgroundTint="@color/blue5"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/bmistartbtn"
+        app:rippleColor="#7C7070" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

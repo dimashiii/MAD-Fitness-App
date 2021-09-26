@@ -43,13 +43,14 @@
         <entry key="app/src/main/res/drawable/ic_baseline_search_24.xml" value="0.12314814814814815" />
         <entry key="app/src/main/res/drawable/ic_editbtn1.xml" value="0.12314814814814815" />
         <entry key="app/src/main/res/drawable/progress_bg.xml" value="0.12314814814814815" />
+        <entry key="app/src/main/res/drawable/startdiary_bg.xml" value="0.21288888888888888" />
         <entry key="app/src/main/res/drawable/tips_bg.xml" value="0.11296296296296296" />
         <entry key="app/src/main/res/font/asap.xml" value="0.13518518518518519" />
         <entry key="app/src/main/res/layout/activity_add_exercise.xml" value="0.1" />
         <entry key="app/src/main/res/layout/activity_add_health_tips.xml" value="0.17927927927927928" />
         <entry key="app/src/main/res/layout/activity_adddata.xml" value="0.18888888888888888" />
         <entry key="app/src/main/res/layout/activity_bmi_category.xml" value="0.19862887354829273" />
-        <entry key="app/src/main/res/layout/activity_bmi_diary_form.xml" value="0.33447687953003064" />
+        <entry key="app/src/main/res/layout/activity_bmi_diary_form.xml" value="0.26587915873219875" />
         <entry key="app/src/main/res/layout/activity_calc_bmi.xml" value="0.165" />
         <entry key="app/src/main/res/layout/activity_card_selector.xml" value="0.19144144144144143" />
         <entry key="app/src/main/res/layout/activity_create_workout_plan.xml" value="0.19144144144144143" />
@@ -69,6 +70,7 @@
         <entry key="app/src/main/res/layout/activity_sign_up_page.xml" value="0.13783783783783785" />
         <entry key="app/src/main/res/layout/activity_single_health_tip.xml" value="0.17927927927927928" />
         <entry key="app/src/main/res/layout/activity_start_bmi_cal.xml" value="0.1" />
+        <entry key="app/src/main/res/layout/activity_start_diary.xml" value="0.2018018018018018" />
         <entry key="app/src/main/res/layout/activity_update_health_tips.xml" value="0.19144144144144143" />
         <entry key="app/src/main/res/layout/activity_waterconsuptionplans.xml" value="0.13783783783783785" />
         <entry key="app/src/main/res/layout/activity_waterdashboard.xml" value="0.13783783783783785" />
