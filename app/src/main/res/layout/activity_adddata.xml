@@ -33,7 +33,6 @@
         android:layout_height="wrap_content"
         android:id="@+id/add_email"
         android:textSize="20sp"
-        android:hint="Date"
         android:layout_marginBottom="15dp"
         android:textColor="#000"/>
 

@@ -86,10 +86,7 @@ public class BmiDiaryForm extends AppCompatActivity {
             startActivity(intent);
         });
 
-        btnBack1.setOnClickListener(view->{
-            Intent i= new Intent(this,BmiDiaryForm.class);
-            startActivity(i);
-        });
+
 
 
     }
