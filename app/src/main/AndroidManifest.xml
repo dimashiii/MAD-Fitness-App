@@ -46,8 +46,7 @@
             </intent-filter>
         </activity>
         <activity
-            android:name=".StartDiary"
-            android:exported="true">
+            android:name=".StartDiary">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
@@ -55,18 +54,32 @@
             </intent-filter>
         </activity>
         <activity
-            android:name=".BmiDiaryForm"
-            android:exported="true">
+            android:name=".BmiDiaryForm">
+
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
+        <activity
+            android:name=".Progress">
 
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
 
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".UpdateBmiDiaryForm">
 
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
 
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
 
 
         <activity android:name=".adddata" />
