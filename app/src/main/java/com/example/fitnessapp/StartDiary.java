@@ -14,7 +14,7 @@ public class StartDiary extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_start_diary);
 
-        startwriteDiary = (Button)findViewById(R.id.diarystartbtn);
+        startwriteDiary = findViewById(R.id.diarystartbtn2);
 
         startwriteDiary.setOnClickListener(view ->{
             Intent intentNext = new Intent(this, BmiDiaryForm.class);

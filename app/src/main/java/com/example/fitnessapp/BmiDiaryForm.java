@@ -68,7 +68,7 @@ public class BmiDiaryForm extends AppCompatActivity {
         });
 
         btnView1.setOnClickListener(view->{
-            Intent intent = new Intent(this,PlanWorkout.class);
+            Intent intent = new Intent(this,Progress.class);
 
             String dname = enterDname.getText().toString();
             String ddate = enterDdate.getText().toString();
