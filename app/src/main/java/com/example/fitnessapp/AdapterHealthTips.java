@@ -47,12 +47,12 @@ public class AdapterHealthTips extends FirebaseRecyclerAdapter<ModelHealthTips,A
     }
 
     @Override
-    protected void onBindViewHolder(@NonNull final tips_viewholder holder, final int position, @NonNull final ModelHealthTips ModelHealthTips)
+    protected void onBindViewHolder(@NonNull final tips_viewholder holder, final int position, @NonNull final ModelHealthTips model)
     {
-        holder.htopic.setText(ModelHealthTips.getHtopic());
-        holder.hdesc.setText(ModelHealthTips.getHdesc());
-        holder.hdate.setText(ModelHealthTips.getHdate());
-        Glide.with(holder.img.getContext()).load(ModelHealthTips.getPurl()).into(holder.img);
+        holder.htopic.setText(model.getHtopic());
+        holder.hdesc.setText(model.getHdesc());
+        holder.hdate.setText(model.getHdate());
+        Glide.with(holder.img.getContext()).load(model.getPurl()).into(holder.img);
 
         holder.edit.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -69,10 +69,10 @@ public class AdapterHealthTips extends FirebaseRecyclerAdapter<ModelHealthTips,A
                 final EditText hdate=myview.findViewById(R.id.uhdate);
                 Button submit=myview.findViewById(R.id.usubmit);
 
-                purl.setText(ModelHealthTips.getPurl());
-                htopic.setText(ModelHealthTips.getHtopic());
-                hdesc.setText(ModelHealthTips.getHdesc());
-                hdate.setText(ModelHealthTips.getHdate());
+                purl.setText(model.getPurl());
+                htopic.setText(model.getHtopic());
+                hdesc.setText(model.getHdesc());
+                hdate.setText(model.getHdate());
 
                 dialogPlus.show();
 

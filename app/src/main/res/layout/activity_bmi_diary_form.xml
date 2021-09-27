@@ -82,7 +82,7 @@
         android:textSize="20sp"
         android:hint="Desired Weight"
         android:paddingLeft="15dp"
-        android:layout_marginBottom="45dp"
+        android:layout_marginBottom="35dp"
         android:textColor="#000"/>
 
     <Button
@@ -95,6 +95,8 @@
         android:textSize="20sp"
         android:paddingLeft="15dp"
         android:text="Add Your Records"/>
+
+
     <Button
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
@@ -102,7 +104,11 @@
         android:background="@drawable/bgbtnblue"
         app:backgroundTint="@color/d_yellow"
         android:textSize="20sp"
-        android:text="Back"/>
+        android:layout_marginBottom="15dp"
+        android:text="Back n View"/>
 
 
-</androidx.appcompat.widget.LinearLayoutCompat>
+
+
+
+</androidx.appcompat.widget.LinearLayoutCompat >

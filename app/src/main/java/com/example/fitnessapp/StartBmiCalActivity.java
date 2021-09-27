@@ -26,7 +26,7 @@ public class StartBmiCalActivity extends AppCompatActivity {
         });
 
         Diary.setOnClickListener(view ->{
-            Intent intentNext = new Intent(this, CalcBmi.class);
+            Intent intentNext = new Intent(this, StartDiary.class);
             startActivity(intentNext);
         });
 

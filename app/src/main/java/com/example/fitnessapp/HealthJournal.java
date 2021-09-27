@@ -23,11 +23,11 @@ public class HealthJournal extends AppCompatActivity {
             Intent intentNext = new Intent(this, StartBmiCalActivity.class);
             startActivity(intentNext);
         });
-/*
+
         healthPrCard.setOnClickListener(view ->{
-            Intent intentNext = new Intent(this, StartBmiCalActivity.class);
+            Intent intentNext = new Intent(this, MainActivity.class);
             startActivity(intentNext);
-        });*/
+        });
     }
 
 }
